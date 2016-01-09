@@ -1,0 +1,29 @@
+<html>
+    <head th:replace="fragments/headTag :: headTag">
+    </head>
+    <body>
+
+
+        <div class="container navbar" >
+            <div th:include="fragments/bodyHeader" th:remove="tag">
+            </div>
+        </div>
+        <div style="text-align: left;" class="container"  >            
+            The code types applicaton is used to maintain codes used in cis2232 web application.  
+        </div>
+        <div style="text-align: left;" class="container"  >            
+            This project is based on a sample application provided by Spring (PetClinic).  The structure is based on this 
+            project.  
+        </div>
+        <div style="text-align: right;" class="container"  >            
+            BJ - CIS - October 2015
+        </div>
+
+        <div class="container">
+            <div th:include="fragments/footer" th:remove="tag">
+            </div>
+        </div>
+
+    </body>
+
+</html>

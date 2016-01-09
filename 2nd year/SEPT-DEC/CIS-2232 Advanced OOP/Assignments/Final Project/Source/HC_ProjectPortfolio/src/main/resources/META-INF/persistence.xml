@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="cisis_HC_ProjectPortfolio_war_1.0PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>info.hccis.admin.model.jpa.Project</class>
+    <class>info.hccis.admin.model.jpa.Journal</class>
+    <class>info.hccis.admin.model.jpa.Milestone</class>
+    <class>info.hccis.admin.model.jpa.Hyperlink</class>
+    <class>info.hccis.admin.model.jpa.Profile</class>
+    <class>info.hccis.admin.model.jpa.User</class>
+    <class>info.hccis.admin.model.jpa.Technology</class>
+    <class>info.hccis.admin.model.jpa.Projects</class>
+    <class>info.hccis.admin.model.jpa.Journals</class>
+    <class>info.hccis.admin.model.jpa.Hyperlinks</class>
+    <class>info.hccis.admin.model.jpa.Useraccess</class>
+    <class>info.hccis.admin.model.jpa.Profiles</class>
+    <class>info.hccis.admin.model.jpa.Technologies</class>
+    <class>info.hccis.admin.model.jpa.Milestones</class>
+    <class>info.hccis.admin.model.jpa.ProjectStatus</class>
+    <class>info.hccis.admin.model.jpa.UserAccess</class>
+    <class>info.hccis.admin.model.jpa.CodeType</class>
+    <class>info.hccis.admin.model.jpa.CodeValue</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ProjectPortfolio?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>

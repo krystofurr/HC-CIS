@@ -1,0 +1,51 @@
+<html>
+    <head th:replace="fragments/headTag :: headTag">
+    </head>
+    <body>
+
+
+        <div class="container navbar" >
+            <div th:include="fragments/bodyHeader" th:remove="tag">
+            </div>
+        </div>
+
+        <div class="container" >            
+
+            <div><h2>Code Values</h2><a class="btn btn-primary btn-lg" th:href="@{/codes/codeValueAdd(id=${codeTypeId})}" th:text="Add" ></a></div>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">Sequence</th>
+                        <th style="width: 150px;">Short Description</th>
+                        <th style="width: 150px;">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="codeValue : ${codeValues}">
+                        <td><a th:href="@{/codes/codeValueEdit(id=${codeValue.codeTypeId},sequence=${codeValue.codeValueSequence})}" th:text="${codeValue.codeValueSequence}" ></a></td>
+                        <td th:text="${codeValue.descriptionShort}"></td>
+                        <td th:text="${codeValue.description}"></td>
+                    </tr>
+                </tbody>
+            </table>    
+
+
+
+
+            <div>
+                <div th:include="fragments/footer" th:remove="tag">
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </body>
+
+</html>

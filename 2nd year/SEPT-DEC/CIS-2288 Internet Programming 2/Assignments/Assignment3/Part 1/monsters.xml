@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+ ____            _     _           __  __                 _              ____        _
+|  _ \ __ _ _ __| |_  / |         |  \/  | ___  _ __  ___| |_ ___ _ __  |  _ \  __ _| |_ __ _
+| |_) / _` | '__| __| | |  _____  | |\/| |/ _ \| '_ \/ __| __/ _ \ '__| | | | |/ _` | __/ _` |
+|  __/ (_| | |  | |_  | | |_____| | |  | | (_) | | | \__ \ ||  __/ |    | |_| | (_| | || (_| |
+|_|   \__,_|_|   \__| |_|         |_|  |_|\___/|_| |_|___/\__\___|_|    |____/ \__,_|\__\__,_|
+
+    Program name:       Assignment 3 - Part 1
+    Author:             Christopher Sigouin
+    Version:            1.0
+    Description:        An XML file that contains data on monsters for a fantasy role playing game
+    Dependencies:       n/a
+    Database file:      n/a
+    Change History:     2015.11.04 Original version by CJS
+
+    RANGES
+
+    hitPoints => 1 to 5000
+    magicPoints => 1 to 1000
+    attackRating => 1 to 100
+    defenseRating => 1 to 100
+    experiencePoints => 1 to 2000
+    treasureCode => 1 to 10 ( could be based off of another table )
+
+-->
+
+<monsters>
+
+    <demon>
+        <hitPoints>1500</hitPoints>
+        <magicPoints>200</magicPoints>
+        <attackRating>50</attackRating>
+        <defenseRating>50</defenseRating>
+        <experiencePoints></experiencePoints>
+        <treasureCode>7</treasureCode>
+        <description>A dark entity from the underworld</description>
+    </demon>
+
+    <brownie>
+        <hitPoints>30</hitPoints>
+        <magicPoints>500</magicPoints>
+        <attackRating>5</attackRating>
+        <defenseRating>5</defenseRating>
+        <experiencePoints>200</experiencePoints>
+        <treasureCode>2</treasureCode>
+        <description>A small pixie type creature from the forest</description>
+    </brownie>
+
+    <goblin>
+        <hitPoints>75</hitPoints>
+        <magicPoints>0</magicPoints>
+        <attackRating>7</attackRating>
+        <defenseRating>7</defenseRating>
+        <experiencePoints>40</experiencePoints>
+        <treasureCode>1</treasureCode>
+        <description>An ugly disfigured dwarf like creature</description>
+    </goblin>
+
+    <dragon>
+        <red>
+            <hitPoints>5000</hitPoints>
+            <magicPoints>600</magicPoints>
+            <attackRating>70</attackRating>
+            <defenseRating>90</defenseRating>
+            <experiencePoints>2000</experiencePoints>
+            <treasureCode>10</treasureCode>
+            <description>A giant red scaled lizard with wings and razor sharp teeth</description>
+        </red>
+        <black>
+            <hitPoints>5000</hitPoints>
+            <magicPoints>400</magicPoints>
+            <attackRating>90</attackRating>
+            <defenseRating>70</defenseRating>
+            <experiencePoints>2000</experiencePoints>
+            <treasureCode>9</treasureCode>
+            <description>A giant black scaled lizard with wings and razor sharp teeth</description>
+        </black>
+    </dragon>
+
+    <orc>
+        <hitPoints>150</hitPoints>
+        <magicPoints>0</magicPoints>
+        <attackRating>10</attackRating>
+        <defenseRating>10</defenseRating>
+        <experiencePoints>50</experiencePoints>
+        <treasureCode>3</treasureCode>
+        <description>A malevolent humanoid race bent on war and death</description>
+    </orc>
+
+    <golem>
+        <stone>
+            <hitPoints>2000</hitPoints>
+            <magicPoints>0</magicPoints>
+            <attackRating>50</attackRating>
+            <defenseRating>75</defenseRating>
+            <experiencePoints>1300</experiencePoints>
+            <treasureCode>7</treasureCode>
+            <description>A magically animated stone statue</description>
+        </stone>
+        <crystal>
+            <hitPoints>3000</hitPoints>
+            <magicPoints>0</magicPoints>
+            <attackRating>100</attackRating>
+            <defenseRating>50</defenseRating>
+            <experiencePoints>1500</experiencePoints>
+            <treasureCode>8</treasureCode>
+            <description>A magically animated crystal statue</description>
+        </crystal>
+    </golem>
+
+    <skeleton>
+        <hitPoints>120</hitPoints>
+        <magicPoints>0</magicPoints>
+        <attackRating>15</attackRating>
+        <defenseRating>5</defenseRating>
+        <experiencePoints>70</experiencePoints>
+        <treasureCode>2</treasureCode>
+        <description>A magically animated skeleton of a humanoid</description>
+    </skeleton>
+
+    <wraith>
+        <hitPoints>300</hitPoints>
+        <magicPoints>50</magicPoints>
+        <attackRating>30</attackRating>
+        <defenseRating>25</defenseRating>
+        <experiencePoints>200</experiencePoints>
+        <treasureCode>4</treasureCode>
+        <description>An evil spirit that steals life force</description>
+    </wraith>
+
+    <giant>
+        <hitPoints>1750</hitPoints>
+        <magicPoints>0</magicPoints>
+        <attackRating>80</attackRating>
+        <defenseRating>20</defenseRating>
+        <experiencePoints>1000</experiencePoints>
+        <treasureCode>7</treasureCode>
+        <description>A humanoid that is generally taller than 10 feet</description>
+    </giant>
+
+    <deathKnight>
+        <hitPoints>1200</hitPoints>
+        <magicPoints>200</magicPoints>
+        <attackRating>50</attackRating>
+        <defenseRating>70</defenseRating>
+        <experiencePoints>1000</experiencePoints>
+        <treasureCode>6</treasureCode>
+        <description>A knight that has become a servant to the afterlife</description>
+    </deathKnight>
+
+</monsters>
+

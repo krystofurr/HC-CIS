@@ -1,0 +1,43 @@
+QUESTIONS
+=================================================
+Develop a simple network diagram. 
+Develop a package diagram.
+What data integrity would you consider?
+What security/access controls would you consider implementing?
+
+CASE NOTES
+=================================================
+Resort Relations ( Web Application )
+Student Booking ( Web Application )
+Accounting ( Web Application )
+	- Access occurs by:
+		Internet connection -> Web Server ( SRBU Home Office )
+
+
+Finance
+Social Networking
+
+	- relies on Internet Access
+	- students compare notes before booking
+	- requires 'Wireless Network' at each resort
+
+* SRBU not responsible for install/maintenance of resort wireless networks
+	- provides design specification and guidelines
+	- resort responsible for connecting to internet 
+	- resort responsible for secure wireless connection
+
+CONTROLS
+=================================================
+
+Integrity
+	- Application programs and the databases that support them
+
+	Ensure correct system function
+		Rejecting invalid data inputs
+		Preventing unauthorized data outputs
+		Protecting data and programs against accidental or malicious tampering
+
+	
+
+Security
+	- Operating system and the network

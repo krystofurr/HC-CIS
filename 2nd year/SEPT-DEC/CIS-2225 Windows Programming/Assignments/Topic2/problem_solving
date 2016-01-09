@@ -1,0 +1,72 @@
+A large Internet merchandise provider determines its shipping charges based on
+the number of items purchased. As the number increases, the shipping charges
+proportionally decrease. This is done to encourage more purchases. If a single
+item is purchased the shipping charge is $2.99. When customers purchase
+between 2 and 5 items, they are charged the initial $2.99 for the first item and
+then $1.99 per item for the remaining items. For customers who purchase more
+than 5 items but less than 15, they are charged the initial $2.99 for the first item,
+$1.99 per item for items 2 through 5, and $1.49 per item for the remaining items.
+If they purchase 15 or more items, they are charged the initial $2.99 for the first
+item, $1.99 per item for items 2 through 5, and $1.49 per item for items 6
+through 14 and then just $0.99 per item for the remaining items. Allow the user
+to enter the number of items purchased. Display the shipping charges.
+
+
+Single item = 2.99
+> 1 and <= 5 items = 2.99 on first time, 1.99 on other items
+>= 6 and <=14 = 2.99 on first time, 1.99 for items 2 - 5, 1.49 for remaining
+>= 15 = 2.99 on first item, 1.99 for items 2-5, 1.49 for 6-14, .99 for the rest of the items 
+
+CONSTANTS
+
+SINGLE_SHIPPING_CHARGE = 2.99
+2_TO_5_SHIPPING_CHARGE = 1.99
+6_TO_15_SHIPPING _CHARGE = 1.49
+MORE_THAN_15_SHIPPING_CHARGE = .99
+
+2_TO_5_SHIPPING_CHARGE_MAX = 2_TO_5_SHIPPING_CHARGE * 4
+6_TO_15_SHIPPING_CHARGE_MAX =  6_TO_15_SHIPPING_CHARGE  * 9
+
+VARIABLES
+
+numberOfItemsPurchased
+totalShippingCharge
+
+CONDITIONAL VALUES
+
+one_item = ( numberOfItems == 1 );
+2_to_5_items = ( numberOfItems >= 2 && numberOfItems <= 5 ); // Inclusive
+5_to_15_items = ( numberOfItems >= 6 && numberOfItems < 15); // Inclusive
+more_than_15_items = ( numberOfItems >= 15 );
+
+
+if one_item
+	total = SINGLE_SHIPPING_CHARGE
+if 2_to_5_items
+	total = SINGLE_SHIPPING_CHARGE + ( findRemainingItems(numberOfItems) * 2_TO_5_SHIPPING_CHARGE )
+if 5_to_15_items
+	total = SINGLE_SHIPPING_CHARGE + 2_TO_5_SHIPPING_CHARGE_MAX + 
+		   ( findRemainingItems(numberOfItems) * 6_TO_15_SHIPPING_CHARGE );
+if more_than_15_items
+	total = SINGLE_SHIPPING_CHARGE + 2_TO_5_SHIPPING_CHARGE_MAX + 
+		   6_TO_15_SHIPPING_CHARGE_MAX + ( findRemainingItems(numberOfItems) * 		           MORE_THAN_15_SHIPPING_CHARGE );
+
+
+function findRemainingItems(numberOfItems)
+
+	if one_item
+		return numberOfItems;
+	if 2_to_5_items
+		return numberOfItems - 1
+	if 5_to_15_items
+		return numberOfItems - 5;
+	if more_than_15_items
+		return numberOfItems - 14
+
+TEST DATA
+
+one item = 2.99
+5 items = 2.99 + ( 1.99 * 4 ) = 10.95
+10 items = 2.99 + ( 1.99 * 4 ) + ( 1.49 * 5 ) = 18.4
+20 items = 2.99 + ( 1.99 * 4 ) + ( 1.49 * 9 ) + ( .99 * 6) = 30.3
+

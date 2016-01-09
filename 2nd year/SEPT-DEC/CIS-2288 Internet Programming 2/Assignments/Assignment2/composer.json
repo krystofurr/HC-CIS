@@ -1,0 +1,15 @@
+{
+    "name": "krystofurr/guest-book",
+    "authors": [
+        {
+            "name": "krystofurr",
+            "email": "krystofurr@gmail.com"
+        }
+    ],
+    "require": {
+        "twitter/bootstrap": "^3.3",
+        "components/jquery": "^2.1",
+        "dapphp/securimage": "^3.6",
+        "ckeditor/ckeditor": "^4.5"
+    }
+}

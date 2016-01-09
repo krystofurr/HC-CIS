@@ -1,0 +1,6 @@
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\GraduateStudent\GraduateStudent\bin\Debug\GraduateStudent.dll
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\GraduateStudent\GraduateStudent\bin\Debug\GraduateStudent.pdb
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\GraduateStudent\GraduateStudent\bin\Debug\Student.dll
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\GraduateStudent\GraduateStudent\obj\Debug\GraduateStudent.dll
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\GraduateStudent\GraduateStudent\obj\Debug\GraduateStudent.pdb
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\GraduateStudent\GraduateStudent\obj\Debug\GraduateStudent.csprojResolveAssemblyReference.cache

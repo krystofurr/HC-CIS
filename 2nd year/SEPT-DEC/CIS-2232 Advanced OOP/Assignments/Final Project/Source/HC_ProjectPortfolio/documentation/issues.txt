@@ -1,0 +1,30 @@
+ISSUES
+------------
+
+
+- Cannot submit project status types and technology types using the same name attribute that the java object is defined as.  This causes a HTTP error 400 The request sent by the client was syntactically incorrect.  If a different name is utlized, it seems to post fine
+	- Found that using " Multipart " under the form allows the post to succeed but you cannot obtain the parameter from the post data 		using request. getParameter.
+
+WORK AROUND:
+	Posted data using a different name.  Once it reaches the controller, then use request.getParameter to obtain the value.   Create a new Object that is required by the Project class for it's attributes and set the id value of that new object to the parameter value, then store it into the Project class attribute before saving.  Do this for every required object of Project.
+
+Hibernate @OneToMany
+========================
+
+
+
+Hibernate @ManyToMany
+========================
+Owning-side
+Non owning side
+
+Each side must be added to a Collection
+Collections are set by the object types through a "Getter"
+Using hibernate, persist the owning side ( side that has joins ) and commit.
+Close the session.
+
+
+
+/media/krystofurr/SCHOOL_DRIVE/2ndYEAR/SEPT-DEC/AdvancedOOP/Project_Portfolio/Source/HC_ProjectPortfolio/src/main/resources/META-INF/persistence.xml
+
+

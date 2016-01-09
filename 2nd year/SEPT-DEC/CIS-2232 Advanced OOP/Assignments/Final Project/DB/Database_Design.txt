@@ -1,0 +1,171 @@
++-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
+|P|R|O|J|E|C|T| |P|O|R|F|O|L|I|O|
++-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
+
+1:1
+- A user can have only one profile
+
+1:M
+- A project can have many hyperlinks associated with it
+
+- A project can have many milestones
+
+- A milestone can have many journal entries
+
+
+M:N
+- A single project can use many technologies
+- A technology can be used in many projects
+
+- A profile can have many technologies learned
+- A technology can be used with many user profiles
+
+
+
+
+
+
+DATABASE ( 1NF )
+=================================================
+
+List of objects / attributes picked from the design documentation of Section 
+
+OBJECTS WITHIN THE APPLICATION
+	Users
+	Profiles
+	Projects
+	Milestones
+	Journal Entries
+
+ATTRIBUTES
+
+	User Username
+	User Password
+	User Date Registered
+
+	Project Name	
+	Project Status
+	Project Description
+	Project Position
+	Project Number of Project Members
+	Project Technologies Used
+	Project Milestones
+	Project Related hyperlinks
+
+	Profile Name ( Real Name, not Username )
+	Profile Bio
+	Profile Technologies Learned
+	Profile Total Project Completed
+	Profile Total Project In-Progress
+
+	Milestone Name
+	Milestone Description
+	Milestone Start Date
+	Milestone End Date
+
+	Journal Entry Name
+	Journal Entry Title
+	Body or Message
+	Date of entry
+
+NO PARTIAL DEPENDENCIES
+	User_ID - ( Surrogate PK )
+
+TRANSITIVE DEPENDENCIES
+	User Username => User Password, User Date Registered
+	Project Name => Project Status, Project Description, Project Position, 
+				Project Number of Project Members, Project Tech Used,
+				Project Milesstones, Project Related Hyperlinks
+	Profile Name => Profile Bio, Profile Tech Learned, Total Projects Completed,
+				Total Projects In-Progress
+	Milestone Name=> Milestone Description, Start Date, End Date
+	Journal Entry Name => Title, Body, Date of Entry
+
+DATABASE ( 2NF )
+=================================================
+
+Already in 2NF.  Single PK
+
+DATABASE ( 3NF )
+=================================================
+
+TABLE: USERS
+PK: user_ID
+-----
+
+user_Username
+user_Password
+user_Date_Registered
+
+TABLE: PROFILES
+PK: prof_ID
+-----
+
+prof_Name
+prof_Bio
+prof_Total_Projects_Complete
+prof_Total_Projects_InProgress
+tech_ID ( for tech learned )
+
+FK: user_ID
+
+TABLE: PROJECTS
+PK:proj_ID
+-----
+
+proj_Name
+proj_Status
+proj_Desc
+proj_Position
+proj_Num_Project_Member
+
+TABLE: HYPERLINKS
+PK: hyp_ID
+-----
+
+hyp_ID
+hyp_Desc
+hyp_Link
+
+FK: proj_ID
+
+TABLE: MILESTONES
+PK: mile_ID
+-----
+
+mile_Name
+mile_Desc
+mile_Start_Date
+mile_End_Date
+
+FK: proj_ID
+
+TABLE: JOURNALS
+PK: jour_ID
+-----
+
+jour_Name
+jour_Title
+jour_Body
+jour_Date_Entry
+
+FK: mile_ID
+
+================================================
+KEY / VALUE PAIR TABLES
+================================================
+
+TABLE: TECHNOLOGIES
+PK: tech_ID
+-----
+
+tech_Short_Desc
+tech_Long_Desc
+
+================================================
+NEW TABLES CREATED
+================================================
+
+Hyperlinks
+
+

@@ -1,0 +1,50 @@
+/**
+
+    Program name:       Trivia Game
+    Logical name:       myStyle.css
+    Author:             Christopher Sigouin
+    Version:            1.0
+    Description:        Displays a trivia question and provides a form with a textbox for the user
+                        to type their guess at the answer.  Will display a table once all questions are
+                        completed to display results.
+    Dependencies:
+    Database file:      n/a
+    Change History:     2015.09.22 Original version by CJS
+
+*/
+
+/* Centers the question counter, questions and form fields  */
+.gameBorder {
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* Will select all child input elements under the parent element with .gameBorder */
+.gameBorder input {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Center the table results  */
+.tableResults {
+    margin: 0 auto;
+}
+
+.centerText {
+    text-align: center;
+}
+
+/* When an incorrect answer is displayed in table results   */
+.red {
+    background-color: #FF9999;
+}
+
+/* When a correct answer is displayed in table results   */
+.green {
+    background-color: lightgreen;
+}
+
+/* Font size of all hyperlinks   */
+a {
+    font-size: 2em;
+}

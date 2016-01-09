@@ -1,0 +1,60 @@
+/*
+    _            _                                  _     _____
+   / \   ___ ___(_) __ _ _ __  _ __ ___   ___ _ __ | |_  |___ /
+  / _ \ / __/ __| |/ _` | '_ \| '_ ` _ \ / _ \ '_ \| __|   |_ \
+ / ___ \\__ \__ \ | (_| | | | | | | | | |  __/ | | | |_   ___) |
+/_/   \_\___/___/_|\__, |_| |_|_| |_| |_|\___|_| |_|\__| |____/
+                   |___/
+
+========= CIS 2232 Advanced Object Oriented Programming PWC ==========
+NAME: Christopher Sigouin
+DATE: 30-Oct-2015
+PURPOSE: Assignment 3
+
+*/
+
+html, body {
+   margin:0;
+   padding:0;
+}
+
+body {
+   background-color: #CCCCB3;
+   background-image: url("../images/java-logo.png");
+   background-position: right bottom; /*Positioning*/
+   background-repeat: no-repeat; /*Prevent showing multiple background images*/
+}
+
+li {
+    margin-top: 2%;
+}
+
+input[type="text"] {
+    height: 30px;
+}
+
+.list-unstyled li {
+    padding-right: 2em;
+}
+
+.b {
+  border: solid black 2px;
+}
+
+span.tab-space {
+    margin-left:3em;
+}
+
+.roundTableEdges {
+    border-radius: 20px;
+}
+
+.error {
+    list-style-type: none;
+    font-weight: bold;
+    color: red;
+    background-color: pink;
+}
+
+
+

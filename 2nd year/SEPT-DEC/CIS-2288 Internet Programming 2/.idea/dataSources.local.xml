@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - DB2288@localhost" uuid="e07209df-e1fc-4419-8006-095d835e5300">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>DB2288.*</schema-pattern>
+      <default-schemas>DB2288.*</default-schemas>
+    </data-source>
+  </component>
+</project>

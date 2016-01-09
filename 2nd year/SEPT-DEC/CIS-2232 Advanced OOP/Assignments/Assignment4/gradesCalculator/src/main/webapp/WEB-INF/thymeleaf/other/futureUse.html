@@ -1,0 +1,24 @@
+<html>
+    <head th:replace="fragments/headTag :: headTag">
+    </head>
+    <body>
+
+
+        <div class="container navbar" >
+            <div th:include="fragments/bodyHeader" th:remove="tag">
+            </div>
+        </div>
+
+
+        <div class="container" >            
+            <h1>Under development</h1>
+        </div>
+
+
+            <div class="container">
+                <div th:include="fragments/footer" th:remove="tag">
+                </div>
+            </div>
+    </body>
+
+</html>

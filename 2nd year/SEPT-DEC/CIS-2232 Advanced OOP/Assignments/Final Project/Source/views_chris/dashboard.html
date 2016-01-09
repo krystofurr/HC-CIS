@@ -1,0 +1,125 @@
+<!--
+
+ ____            _           _     ____            _    __       _ _
+|  _ \ _ __ ___ (_) ___  ___| |_  |  _ \ ___  _ __| |_ / _| ___ | (_) ___
+| |_) | '__/ _ \| |/ _ \/ __| __| | |_) / _ \| '__| __| |_ / _ \| | |/ _ \
+|  __/| | | (_) | |  __/ (__| |_  |  __/ (_) | |  | |_|  _| (_) | | | (_) |
+|_|   |_|  \___// |\___|\___|\__| |_|   \___/|_|   \__|_|  \___/|_|_|\___/
+              |__/
+
+Project Members: Christopher Sigouin & Matthew Hutchinson
+
+DASHBOARD VIEW
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<style>
+
+	.b { background-color: #D9A8D5; height: 200px;}
+	.r { background-color: red; height: 1200px;}
+	.g { background-color: green; height: 600px;}
+
+	#sideBar {
+
+		padding: 0;
+	}
+
+	.navDashboard ul li {
+		list-style: none;
+		font-size: 2em;
+		background-color: #8AADB9;
+		text-align: center;
+		margin-top: 5px;
+	}
+
+	.navDashboard ul li:hover { background-color: #5691A6;}
+	.navDashboard ul a { text-decoration: none;}
+	.navDashboard ul { padding: 0; margin: 0; }
+
+	.stick { position:fixed; top:0px; right:0px; }
+
+	</style>
+
+	<script>
+
+		$(document).ready(function() {
+		    var s = $("#sideBar");
+		    var pos = s.position();
+		    $(window).scroll(function() {
+		        var windowpos = $(window).scrollTop();
+		        // s.html("Distance from top:" + pos.top + "<br />Scroll position: " + windowpos);
+		        if (windowpos >= pos.top) {
+		            s.addClass("stick");
+		        } else {
+		            s.removeClass("stick");
+		        }
+		    });
+		});
+
+	</script>
+
+	</head>
+	<body>
+
+		<!-- CONTAINER -->
+		<div class="container-fluid">
+
+			<!-- DASHBOARD HEADER -->
+			<div class="row">
+				<div class="b col-xs-12">
+
+					<h2>HEADER BAR</h2>
+
+				</div>
+			</div>
+			<!-- /DASHBOARD HEADER -->
+
+			<!-- DISPLAY AREA AND SIDEBAR -->
+			<div class="row">
+
+				<!-- DISPLAY AREA -->
+				<div id="displayArea" class="r col-xs-12 col-sm-9">
+
+					<h2>DISPLAY AREA</h2>
+
+				</div>
+
+				<!-- SIDE BAR -->
+				<div id="sideBar" class="col-sm-3">
+					<div class="navDashboard">
+
+						<ul>
+							<a href="#"><li>Project View</li></a>
+							<a href="#"><li>Project Wizard</li></a>
+							<a href="#"><li>User Profile</li></a>
+							<a href="#"><li>About Us</li></a>
+						</ul>
+					</div>
+
+				</div>
+				<!-- /SIDEBAR -->
+
+
+
+			</div>
+			<!-- /DISPLAY AREA AND SIDEBAR -->
+
+		</div>
+		<!-- /CONTAINER -->
+
+	</body>
+</html>
+

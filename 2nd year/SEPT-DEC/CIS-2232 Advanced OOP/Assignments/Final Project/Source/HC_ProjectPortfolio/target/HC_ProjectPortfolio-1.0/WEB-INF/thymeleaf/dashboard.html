@@ -1,0 +1,127 @@
+<!--
+
+ ____            _           _     ____            _    __       _ _
+|  _ \ _ __ ___ (_) ___  ___| |_  |  _ \ ___  _ __| |_ / _| ___ | (_) ___
+| |_) | '__/ _ \| |/ _ \/ __| __| | |_) / _ \| '__| __| |_ / _ \| | |/ _ \
+|  __/| | | (_) | |  __/ (__| |_  |  __/ (_) | |  | |_|  _| (_) | | | (_) |
+|_|   |_|  \___// |\___|\___|\__| |_|   \___/|_|   \__|_|  \___/|_|_|\___/
+               |__/
+
+Project Members: Christopher Sigouin & Matthew Hutchinson
+
+DASHBOARD VIEW
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+	<head th:replace="fragments/headTag :: headTag"></head>
+
+
+	<script>
+
+		$(document).ready(function() {
+		    var s = $("#sideBar");
+		    var posS = s.position();
+
+		    $(window).scroll(function() {
+		        var windowpos = $(window).scrollTop();
+		        // s.html("Distance from top:" + pos.top + "<br />Scroll position: " + windowpos);
+		        if (windowpos >= posS.top) {
+		            s.addClass("stick");
+		        } else {
+		            s.removeClass("stick");
+		        }
+
+		    });
+                    
+                    $('.navDashboard li').click( function() {
+                        $(this).addClass("active");
+                    });
+                });
+
+	</script>
+
+	<body>
+                       
+		<!-- CONTAINER -->
+		<div class="container-fluid">
+
+			<!-- DASHBOARD HEADER -->
+			<div class="row">
+				<div class="b col-xs-12">
+                                    <div th:replace="fragments/dashboardHeader :: dashboardHeader"></div>
+				</div>
+			</div>
+			<!-- /DASHBOARD HEADER -->
+
+			<!-- DISPLAY AREA AND SIDEBAR -->
+			<div class="row">
+
+				<!-- DISPLAY AREA -->
+				<div id="displayArea" class="col-xs-9">
+
+                                        <!-- SWITCH CASE FOR SELECTED VIEW -->
+                                        <div th:switch="${viewType}"> 
+                                            <div th:case="'MultiView'">
+                                                <div th:replace="fragments/multiView :: multiView"></div>
+                                            </div>
+                                            <div th:case="'ProjectWizard'">
+                                                <div th:replace="fragments/projectWizard :: projectWizard"></div>
+                                            </div>
+
+                                            <div th:case="'UserProfile'">
+                                                <div th:replace="fragments/userProfile :: userProfile"></div>
+                                            </div>    
+                                            
+                                            <div th:case="'AboutUs'">
+                                                <div th:replace="fragments/aboutUs :: aboutUs"></div>
+                                            </div>  
+
+                                            <div th:case="'SingleView'">
+                                                <div th:replace="fragments/singleView :: singleView"></div>
+                                            </div> 
+                                            
+                                            <!-- Shows current status for events -->
+                                            <div th:case="*">
+                                                <h2 th:if="${#strings.isEmpty(status)}"
+                                                    th:text="${'Welcome ' + session.userToken.username}"></h2>
+                                                <h2 th:unless='${#strings.isEmpty(status)}'
+                                                    th:text="${status}"></h2>
+                                            </div>
+                                            
+                                         </div>
+    
+				</div>
+
+				<!-- SIDE BAR -->
+				<div id="sideBar" class="col-xs-3">
+                                    <div class="navDashboard">
+                                        <ul>
+                                            <a href="#" th:href="@{/dashboard/multiView}">
+                                                <li th:classappend="${#strings.contains(viewType, 'MultiView')}? active : ''">Project View</li></a>
+                                            <a href="#" th:href="@{/dashboard/projectWizard}">
+                                                <li th:classappend="${#strings.contains(viewType, 'ProjectWizard')}? active : ''">Project Wizard</li></a>
+                                            <a href="#" th:href="@{/dashboard/userProfile}">
+                                                <li th:classappend="${#strings.contains(viewType, 'UserProfile')}? active : ''">User Profile</li></a>
+                                            <a href="#" th:href="@{/dashboard/aboutUs}">
+                                                <li th:classappend="${#strings.contains(viewType, 'AboutUs')}? active : ''">About Us</li></a>
+                                            
+                                        </ul>
+                                    </div>
+
+				</div>
+				<!-- /SIDEBAR -->
+
+
+
+			</div>
+			<!-- /DISPLAY AREA AND SIDEBAR -->
+
+		</div>
+		<!-- /CONTAINER -->
+
+	</body>
+</html>
+

@@ -1,0 +1,100 @@
+<html>
+    <head th:replace="fragments/headTag :: headTag">
+    </head>
+    <body>
+
+
+        <div class="container navbar" >
+            <div th:include="fragments/bodyHeader" th:remove="tag">
+            </div>
+        </div>
+
+
+        <div class="container">            
+
+
+            <h2>File Operations</h2>
+            <!-- Upload -->
+            <div>
+                <h3>Instructions</h3>
+
+                <div><ul class="list-group">
+                        <li class="list-group-item">Try to upload data from Sunday to Saturday to ensure all data is uploaded.</li>
+                        <li class="list-group-item">File to upload must be saved as a .csv file</li>        
+                        <li class="list-group-item">Header row should be in file:&nbsp;&nbsp;<b>Name,Data,RecordNumber,Timestamp</b></li>        
+                        <li class="list-group-item">Date format:&nbsp;&nbsp;<b>yyyy/mm/dd h:mm</b></li>        
+                    </ul>
+                </div>
+
+                <!-- Upload -->
+                <h3>Import</h3>
+                <div class="upload">
+                    <!--                    <form method="POST" action="/roomusage/upload"	enctype="multipart/form-data">
+                    <input type="text" name ="tableName" />-->
+
+                    <form th:object="${fileOperation}" action="/roomusage/upload" enctype="multipart/form-data" method="post" >
+                        <label for="exportTable">Table</label>
+
+                        <!--                    <input th:field="*{whichTable}" type="text"/>-->
+
+
+                        <select th:field="*{whichTable}" name="table"  id="exportTable" selected="*{whichTable}">
+                            <option th:value="usages" >Usages</option>
+                        </select>
+
+                        Upload your file please: 
+                        <input type="file" name="file" />
+                        <input type="submit" value="upload" />
+
+                    </form>
+                </div>
+
+                <!--                <h3>Import</h3>
+                                took this from action                action="/roomusage/upload" 
+                                <form th:object="${fileOperation}" th:action="@{/upload.html}" method="post" enctype="multipart/form-data">
+                                    <label for="table">Table</label>
+                                    <select th:field="*{whichTable}" id="table" selected="usages">
+                                        <option value="usages">Usages</option>
+                                        <option value="bookings">Bookings</option>
+                                        <option value="rooms">Rooms</option>
+                                        <option value="sensors">Sensors</option>
+                                    </select>
+                                    <input type="file" name="file" />
+                                    <input type="submit" class="button" value="Submit" />
+                                </form>-->
+
+
+                <!--
+                                <h3>Export</h3>
+                                <form th:object="${fileOperation}" action="/roomusage/export" method="post" >
+                                    <label for="exportTable">Table</label>
+                
+                                                        <input th:field="*{whichTable}" type="text"/>
+                
+                
+                                    <select th:field="*{whichTable}" name="table"  id="exportTable" selected="*{whichTable}">
+                                        <option th:value="usages" >Usages</option>
+                                        <option th:value="bookings">Bookings</option>
+                                        <option th:value="rooms">Rooms</option>
+                                        <option th:value="sensors">Sensors</option>
+                                    </select>
+                                    <input type="submit" class="button" value="Submit" />
+                                </form>-->
+            </div>
+
+
+            <div>
+                <div th:include="fragments/footer" th:remove="tag">
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,297 @@
+[09-Nov-2015 08:44:46 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Exception' with message 'This application must be run on the command line.' in /home/csigouin/public_html/Assignment4/example.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/csigouin/public_html/Assignment4/example.php on line 14
+[13-Nov-2015 09:29:57 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Exception' with message 'This application must be run on the command line.' in /home/csigouin/public_html/Assignment4/example.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/csigouin/public_html/Assignment4/example.php on line 14
+[13-Nov-2015 16:54:00 America/Los_Angeles] PHP Warning:  file_get_contents(/home/csigouin/public_html/Assignment4~/.credentials/client_secret.json): failed to open stream: No such file or directory in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 189
+[13-Nov-2015 16:54:00 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Exception' with message 'Invalid client secret JSON file.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php:171
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(189): Google_Client->setAuthConfig(false)
+#1 /home/csigouin/public_html/Assignment4/example.php(25): Google_Client->setAuthConfigFile('/home/csigouin/...')
+#2 /home/csigouin/public_html/Assignment4/example.php(73): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 171
+[13-Nov-2015 16:54:44 America/Los_Angeles] PHP Warning:  file_get_contents(~/.credentials/client_secret.json): failed to open stream: No such file or directory in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 189
+[13-Nov-2015 16:54:44 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Exception' with message 'Invalid client secret JSON file.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php:171
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(189): Google_Client->setAuthConfig(false)
+#1 /home/csigouin/public_html/Assignment4/example.php(25): Google_Client->setAuthConfigFile('~/.credentials/...')
+#2 /home/csigouin/public_html/Assignment4/example.php(73): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 171
+[13-Nov-2015 16:54:50 America/Los_Angeles] PHP Warning:  file_get_contents(~/.credentials/client_secret.json): failed to open stream: No such file or directory in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 189
+[13-Nov-2015 16:54:50 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Exception' with message 'Invalid client secret JSON file.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php:171
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(189): Google_Client->setAuthConfig(false)
+#1 /home/csigouin/public_html/Assignment4/example.php(25): Google_Client->setAuthConfigFile('~/.credentials/...')
+#2 /home/csigouin/public_html/Assignment4/example.php(73): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 171
+[13-Nov-2015 16:56:03 America/Los_Angeles] PHP Warning:  file_get_contents(~/.credentials/client_secret.json): failed to open stream: No such file or directory in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 189
+[13-Nov-2015 16:56:03 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Exception' with message 'Invalid client secret JSON file.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php:171
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(189): Google_Client->setAuthConfig(false)
+#1 /home/csigouin/public_html/Assignment4/example.php(25): Google_Client->setAuthConfigFile('~/.credentials/...')
+#2 /home/csigouin/public_html/Assignment4/example.php(73): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 171
+[13-Nov-2015 16:57:01 America/Los_Angeles] PHP Warning:  file_get_contents(/~/.credentials/client_secret.json): failed to open stream: No such file or directory in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 189
+[13-Nov-2015 16:57:01 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Exception' with message 'Invalid client secret JSON file.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php:171
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(189): Google_Client->setAuthConfig(false)
+#1 /home/csigouin/public_html/Assignment4/example.php(25): Google_Client->setAuthConfigFile('/~/.credentials...')
+#2 /home/csigouin/public_html/Assignment4/example.php(73): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 171
+[13-Nov-2015 16:57:04 America/Los_Angeles] PHP Warning:  file_get_contents(/~/.credentials/client_secret.json): failed to open stream: No such file or directory in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 189
+[13-Nov-2015 16:57:04 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Exception' with message 'Invalid client secret JSON file.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php:171
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(189): Google_Client->setAuthConfig(false)
+#1 /home/csigouin/public_html/Assignment4/example.php(25): Google_Client->setAuthConfigFile('/~/.credentials...')
+#2 /home/csigouin/public_html/Assignment4/example.php(73): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 171
+[13-Nov-2015 16:59:11 America/Los_Angeles] PHP Warning:  file_get_contents(/home/csigouin/public_html/Assignment4/.credentials/client_secret.json): failed to open stream: No such file or directory in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 189
+[13-Nov-2015 16:59:11 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Exception' with message 'Invalid client secret JSON file.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php:171
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(189): Google_Client->setAuthConfig(false)
+#1 /home/csigouin/public_html/Assignment4/example.php(25): Google_Client->setAuthConfigFile('/home/csigouin/...')
+#2 /home/csigouin/public_html/Assignment4/example.php(73): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 171
+[13-Nov-2015 17:00:20 America/Los_Angeles] PHP Warning:  file_get_contents(/.credentials/client_secret.json): failed to open stream: No such file or directory in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 189
+[13-Nov-2015 17:00:20 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Exception' with message 'Invalid client secret JSON file.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php:171
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(189): Google_Client->setAuthConfig(false)
+#1 /home/csigouin/public_html/Assignment4/example.php(25): Google_Client->setAuthConfigFile('/.credentials/c...')
+#2 /home/csigouin/public_html/Assignment4/example.php(73): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 171
+[13-Nov-2015 17:03:22 America/Los_Angeles] PHP Warning:  file_get_contents(/.credentials/client_secret.json): failed to open stream: No such file or directory in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 189
+[13-Nov-2015 17:03:22 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Exception' with message 'Invalid client secret JSON file.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php:171
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(189): Google_Client->setAuthConfig(false)
+#1 /home/csigouin/public_html/Assignment4/example.php(25): Google_Client->setAuthConfigFile('/.credentials/c...')
+#2 /home/csigouin/public_html/Assignment4/example.php(73): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php on line 171
+[13-Nov-2015 17:10:03 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 17:10:03 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[13-Nov-2015 17:11:47 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 17:11:47 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[13-Nov-2015 17:16:48 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Exception' with message 'This application must be run on the command line.' in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 37
+[13-Nov-2015 17:17:02 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Exception' with message 'This application must be run on the command line.' in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 37
+[13-Nov-2015 17:17:10 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Exception' with message 'This application must be run on the command line.' in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 37
+[13-Nov-2015 17:17:12 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Exception' with message 'This application must be run on the command line.' in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 37
+[13-Nov-2015 17:17:29 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 17:17:29 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[13-Nov-2015 17:19:34 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 17:19:34 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[13-Nov-2015 18:01:37 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 18:01:37 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[13-Nov-2015 18:03:29 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 18:03:29 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[13-Nov-2015 18:04:45 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 18:04:45 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[13-Nov-2015 18:04:55 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 18:04:55 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[13-Nov-2015 18:26:39 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:26:39 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:28:01 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:28:03 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:28:03 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:29:34 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:30:01 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:30:05 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:30:05 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:30:45 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:30:45 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/users/me/calendarList: (403) Access Not Configured. The API (Calendar API) is not enabled for your project. Please use the Google Developers Console to update your configuration.' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Goog in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[13-Nov-2015 18:52:24 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 18:52:24 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[13-Nov-2015 18:55:14 America/Los_Angeles] PHP Warning:  fgets() expects parameter 1 to be resource, string given in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 60
+[13-Nov-2015 18:55:14 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Invalid code' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:89
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(128): Google_Auth_OAuth2->authenticate('', false)
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(63): Google_Client->authenticate('')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 89
+[16-Nov-2015 05:39:05 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message 'Error calling GET https://www.googleapis.com/calendar/v3/calendars/primary/events/eventId: (404) Not Found' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php:110
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(62): Google_Http_REST::decodeHttpResponse(Object(Google_Http_Request), Object(Google_Client))
+#1 [internal function]: Google_Http_REST::doExecute(Object(Google_Client), Object(Google_Http_Request))
+#2 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Task/Runner.php(174): call_user_func_array(Array, Array)
+#3 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php(46): Google_Task_Runner->run()
+#4 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(593): Google_Http_REST::execute(Object(Google_Client), Object(Google_Http_Request))
+#5 /home/csigouin/public_html/A in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Http/REST.php on line 110
+[19-Nov-2015 17:46:23 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Could not json decode the token' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:186
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(218): Google_Auth_OAuth2->setAccessToken('// {\n//     "ac...')
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(72): Google_Client->setAccessToken('// {\n//     "ac...')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 186
+[19-Nov-2015 17:46:37 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Could not json decode the token' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:186
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(218): Google_Auth_OAuth2->setAccessToken('// {\n//     "ac...')
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(72): Google_Client->setAccessToken('// {\n//     "ac...')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 186
+[19-Nov-2015 17:47:06 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Could not json decode the token' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:186
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(218): Google_Auth_OAuth2->setAccessToken('// {\n//     "ac...')
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(72): Google_Client->setAccessToken('// {\n//     "ac...')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 186
+[19-Nov-2015 17:47:09 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Could not json decode the token' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:186
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(218): Google_Auth_OAuth2->setAccessToken('// {\n//     "ac...')
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(72): Google_Client->setAccessToken('// {\n//     "ac...')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 186
+[19-Nov-2015 17:47:11 America/Los_Angeles] PHP Fatal error:  Uncaught exception 'Google_Auth_Exception' with message 'Could not json decode the token' in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php:186
+Stack trace:
+#0 /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Client.php(218): Google_Auth_OAuth2->setAccessToken('// {\n//     "ac...')
+#1 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(72): Google_Client->setAccessToken('// {\n//     "ac...')
+#2 /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php(96): getClient()
+#3 {main}
+  thrown in /home/csigouin/public_html/Assignment4/vendor/google/apiclient/src/Google/Auth/OAuth2.php on line 186
+[21-Nov-2015 16:30:39 America/Los_Angeles] PHP Parse error:  syntax error, unexpected ';' in /home/csigouin/public_html/Assignment4/publicGoogleCalendar.php on line 187

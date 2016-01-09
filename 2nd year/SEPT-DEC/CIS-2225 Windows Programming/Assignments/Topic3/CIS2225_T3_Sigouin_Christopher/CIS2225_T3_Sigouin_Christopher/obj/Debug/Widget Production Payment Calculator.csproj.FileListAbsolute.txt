@@ -1,0 +1,9 @@
+E:\SEPT-DEC\Windows Programming\Assignments\Topic3\CIS2225_T3_Sigouin_Christopher\CIS2225_T3_Sigouin_Christopher\bin\Debug\CIS2225_T3_Sigouin_Christopher.exe.config
+E:\SEPT-DEC\Windows Programming\Assignments\Topic3\CIS2225_T3_Sigouin_Christopher\CIS2225_T3_Sigouin_Christopher\bin\Debug\CIS2225_T3_Sigouin_Christopher.exe
+E:\SEPT-DEC\Windows Programming\Assignments\Topic3\CIS2225_T3_Sigouin_Christopher\CIS2225_T3_Sigouin_Christopher\bin\Debug\CIS2225_T3_Sigouin_Christopher.pdb
+E:\SEPT-DEC\Windows Programming\Assignments\Topic3\CIS2225_T3_Sigouin_Christopher\CIS2225_T3_Sigouin_Christopher\obj\Debug\CIS2225_T3_Sigouin_Christopher.WPPC.resources
+E:\SEPT-DEC\Windows Programming\Assignments\Topic3\CIS2225_T3_Sigouin_Christopher\CIS2225_T3_Sigouin_Christopher\obj\Debug\CIS2225_T3_Sigouin_Christopher.Properties.Resources.resources
+E:\SEPT-DEC\Windows Programming\Assignments\Topic3\CIS2225_T3_Sigouin_Christopher\CIS2225_T3_Sigouin_Christopher\obj\Debug\Widget Production Payment Calculator.csproj.GenerateResource.Cache
+E:\SEPT-DEC\Windows Programming\Assignments\Topic3\CIS2225_T3_Sigouin_Christopher\CIS2225_T3_Sigouin_Christopher\obj\Debug\CIS2225_T3_Sigouin_Christopher.exe
+E:\SEPT-DEC\Windows Programming\Assignments\Topic3\CIS2225_T3_Sigouin_Christopher\CIS2225_T3_Sigouin_Christopher\obj\Debug\CIS2225_T3_Sigouin_Christopher.pdb
+E:\SEPT-DEC\Windows Programming\Assignments\Topic3\CIS2225_T3_Sigouin_Christopher\CIS2225_T3_Sigouin_Christopher\obj\Debug\Widget Production Payment Calculator.csprojResolveAssemblyReference.cache

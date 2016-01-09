@@ -1,0 +1,9 @@
+Background Primer - Why source control is necessary
+
+Introduce Git
+
+Provide live demonstration of how it works
+
+What some of the challenges are with Git VCS
+
+Discuss GitHub and what makes it so popular

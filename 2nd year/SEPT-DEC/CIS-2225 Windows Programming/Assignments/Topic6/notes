@@ -1,0 +1,51 @@
+Assignment instructions below:
+
+Complete and Submit the following application:
+Write a project to manage book information from the RnrBooks.mdf database.  Note:  Open the RnRBooks in Access and resave it to a .accdb format in order to use with the provider .ACE or .JET.
+On your application Form a ComboBox should be populated from the table book title attribute in order to select the book you wish to view.  The form should be in 'textbox' format.
+On the form your application should include Add/Edit/Delete button functionality for book information.
+Error-handling should be implemented on three attribute of the book table.
+Try_Catch Exception handling should be implemented with regards to the database aspects of connectivity and updating at minimum.
+The database is within the topic.
+     Note:  Remember the Program Documentation Guidelines and Submission Guidelines.
+
+
+
+
+iconData base assignment comments
+by Caissy, Gerald at 11/20/2015 | 2:37 PM
+
+ Hello,
+
+Two comments:
+
+      
+    The save functionality process is you Add/Edit the textbox data then CLICK the Save button.  But you should not be allowed to change the PKey of the table.
+      
+    Combobox linked to ISBN depending how you set things up may cause a run-time error due to the bound control navigator Add functionality, therefore you may be required to use the event handler "SelectionChangeCommitted" of the combobox control to manage canceling the add.   This is very dependant on how you went about creating your application..
+
+Gerald..
+
+
+
+
+iconDatabase application assigment in C#
+by Caissy, Gerald at 11/19/2015 | 12:05 PM
+
+Hello everyone,
+
+It has been brought to my attention that the RnRBooks database in the topic is not working correctly for your assignment.   The reason is that the .MDF version of the DB is not compatible with the newest version of Access, although there are conversion steps available I am circulating a new .MDB file for you to use.   Nonetheless, Kody Duncan has tested for me and reports back that "Their is issues with the MDB on newer access programs.   Any newer then 2013 you run into a DLL issues but it can be ignored and with work."  
+
+Please report any issues as you work with this DB file.   Thanks.
+
+
+Clarification on assignment overall structural approach:  Although, I did not explicitly indicate it and therefore will accept bound controls, the assignment was to be unbound controls as we did in class this past Monday, which will be the format of your final practical in this course (just an advanced notification.  If you submit bound controls, I will accept the assignment.
+
+  
+
+Gerald..
+
+Attachments:
+RnrBooks.mdb
+
+

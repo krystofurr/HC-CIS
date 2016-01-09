@@ -1,0 +1,49 @@
+
+Form
+	Text Boxes
+		Name
+			- To obtain person's name
+		Widgets Assembled
+			- To obtain number of widgets assembled
+
+	Buttons
+		Calculate
+			- Displays dollar amount earned	
+		Summary
+			- Displays total number of widgets, total pay, average pay for all employees
+		Clear
+			- Clears the name and number of widgets for current employee
+		Clear all
+			- Clear summary totals after confirming the operation with the user
+
+Validation
+	Check for missing data ( empty fields, incorrect types )
+	Do not display summary if data is missing
+		- Disable Summary button until first order is calculated
+
+
+Widget class
+	Attributes
+		PRICE_POOR = .50// 1..100 inclusive
+		PRICE_LOW = .55 // 101..399 inclusive
+		PRICE_MED = .60 // 400..599 inclusive
+		PRICE_HIGH = .65 // 600+ 
+		price
+		quantity
+	Methods
+		determineWidgetPrice() - Set price for the particular widget based on the number
+
+WidgetWorker class
+	Attributes
+		name
+		totalPay
+	Methods
+		calculateWorkerPay(Widget widget) - Calculates based on the quantity and price of 											  a widget
+
+Main Methods
+	calculateAveragePay(Widget widget) - Calculates based on every widget that is passed.  This should
+									     holds the values with a variable since we haven't used array's 										     yet.
+
+	
+	
+

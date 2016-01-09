@@ -1,0 +1,15 @@
+START : Monday, November 9th 11:38 AM
+
+	- Google API Library can be quickly installed with use of ' Composer ' dependency manager.
+
+	- Command line to install the library
+		php composer.phar require google/apiclient:1.*
+
+	- JSON file types hold config information for the example.  These will need to be added or replaced with literal strings
+
+END
+
+START 
+
+	
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!--
+========= CIS 2232 Advanced Object Oriented Programming PWC ==========
+ ____            _           _     ____            _    __       _ _       
+|  _ \ _ __ ___ (_) ___  ___| |_  |  _ \ ___  _ __| |_ / _| ___ | (_) ___  
+| |_) | '__/ _ \| |/ _ \/ __| __| | |_) / _ \| '__| __| |_ / _ \| | |/ _ \ 
+|  __/| | | (_) | |  __/ (__| |_  |  __/ (_) | |  | |_|  _| (_) | | | (_) |
+|_|   |_|  \___// |\___|\___|\__| |_|   \___/|_|   \__|_|  \___/|_|_|\___/ 
+               |__/                                                         
+
+Project Members: Christopher Sigouin & Matthew Hutchinson
+
+Date: 7-Dec-2015
+Purpose: Final Project
+-->
+
+<div th:fragment="projectWizard">
+    <!-- PROJECT WIZARD FRAGMENT -->
+    
+    <form th:object="${project}" th:action="@{/project/add}" action="/project/add" method="GET">
+        
+        <div class="nav-projectWizard pull-right">
+        <button type="button" class="btn btn-info openall">Expand all</button>
+        <button type="button" class="btn btn-info closeall">Collapse all</button>
+        <button class="saveButton btn btn-primary" type="submit">SAVE PROJECT</button>
+        </div>
+        
+        <div class="accordion" id="accordion2">
+
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+
+                <a th:text="#{projectWizard.categories.title}" class="accordion-toggle" data-toggle="collapse" 
+                   data-parent="#accordion2" href="#collapseOne">
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse in">
+                <div class="accordion-inner">
+                    <div th:replace="fragments/projectWizard/title :: title"></div>                        
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a th:text="#{projectWizard.categories.images}" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                   <div th:replace="fragments/projectWizard/images :: images"></div> 
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a th:text="#{projectWizard.categories.description}" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
+
+                </a>
+              </div>
+              <div id="collapse3" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div th:replace="fragments/projectWizard/description :: description"></div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a th:text="#{projectWizard.categories.projectStatus}" class="accordion-toggle" 
+                    data-toggle="collapse" data-parent="#accordion2" href="#collapse9">
+
+                </a>
+              </div>
+              <div id="collapse9" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div th:replace="fragments/projectWizard/projectStatus :: projectStatus"></div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a th:text="#{projectWizard.categories.position}" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse4">
+
+                </a>
+              </div>
+              <div id="collapse4" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div th:replace="fragments/projectWizard/position :: position"></div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a th:text="#{projectWizard.categories.members}" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse5">
+
+                </a>
+              </div>
+              <div id="collapse5" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div th:replace="fragments/projectWizard/members :: members"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a th:text="#{projectWizard.categories.technologies}" class="accordion-toggle" 
+                    data-toggle="collapse" data-parent="#accordion2" href="#collapse6">
+
+                </a>
+              </div>
+              <div id="collapse6" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div th:replace="fragments/projectWizard/technologies :: technologies"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a th:text="#{projectWizard.categories.milestones}" class="accordion-toggle" 
+                    data-toggle="collapse" data-parent="#accordion2" href="#collapse7">
+
+                </a>
+              </div>
+              <div id="collapse7" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div th:replace="fragments/projectWizard/milestones :: milestones"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a th:text="#{projectWizard.categories.hyperlinks}" class="accordion-toggle" 
+                    data-toggle="collapse" data-parent="#accordion2" href="#collapse8">
+
+                </a>
+              </div>
+              <div id="collapse8" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  <div th:replace="fragments/projectWizard/hyperlinks :: hyperlinks"></div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
+        
+    </form>
+
+    <!-- /PROJECT WIZARD FRAGMENT -->
+</div>
+

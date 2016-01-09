@@ -1,0 +1,17 @@
+
+================================================
+	 NOTES
+================================================
+
+In order to find out how many grades that the client needs to send, 
+it would have to send a request for the number of grades before it
+sends any grade values.
+
+- Client asks web service for data on deliverables within it's system ( how many, name and weight, etc )
+- Web Service will provide client data of all deliverables
+- Client will enter grades for each deliverable and send data back to the web service
+- Web service will accept the data, process the average, and return the value back to the client
+- Client receives response and displays the value
+
+
+

@@ -1,0 +1,50 @@
+<html>
+    <head th:replace="fragments/headTag :: headTag"></head>
+    <body>
+
+        <div class="container navbar" >
+            <div th:include="fragments/bodyHeader" th:remove="tag">
+            </div>
+        </div>
+
+        <div class="container" >
+
+            <h2>Code Types</h2>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">Code Type</th>
+                        <th style="width: 150px;">English Description</th>
+                        <th style="width: 150px;">French Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="codeType : ${codeTypes}">
+
+                        <td><a th:href="@{/codes/codeValues(id=${codeType.codeType})}" th:text="${codeType.codeType}" ></a></td>
+                        <td th:text="${codeType.englishDescription}"></td>
+                        <td th:text="${codeType.frenchDescription}"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+            <div>
+                <div th:include="fragments/footer" th:remove="tag">
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </body>
+
+</html>

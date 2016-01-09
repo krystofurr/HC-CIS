@@ -1,0 +1,46 @@
+Review: Full, Anonymous: No
+Assignment instructions below:
+
+Complete and Submit:
+Write an MDI application that is a simple text editor.  Allow the user to open multiple documents, each in a separate child Form.  For the text editor, use one big TextBox control with its Multiline property set to true or a RichTextBox control.  Set the control's Anchor property to all four edges so the control fills its form.
+The main startup form should have an Open menu item to open previously saved files; the child forms should have a Save menu item to save their text to a file.  Use the file handling that you previously learned about and display the name of the file in the form's title bar.
+Add ErrorProvider validation on the text box in order to assure that text has been entered before attempting to save to a file.
+Add a toolbar and status bar to the application forms, and code the toolbar Close, Save, Open appropriately.
+Add a calendar DateTimePickerControl to your MDI startup form menu selection. This will allow you to pick a date to concatenate to your written text.  Your written text should be followed with the following:  
+Date Written:   ..date from D_T_Picker..
+ 
+
+Tips/Unstanding for each instruction are as follows:
+
+When creating an MDI application (this will allow forms inside forms):
+Form1 (Main Form) well need the property 'IsMdiContainer' set too true.
+Form2 (File/Text Editior Form) for textbox set 'Dock' to fill and 'Multiline' to true (anchor has no effect).
+When calling Form2 you must set it as a MdiParent to have it open inside the main form.
+
+MRU (most-recently-used) List in Menu Strip:
+Use an arraylist to store filelocations. Example:  ArrayList MyList = new ArrayList();
+The list should be stored in ‘Main Form’ and to add information from the child from use a static method. (Not all method will need to be static just use method to set a variable which gets triggered to added information to ‘MyList’ at some point)
+ 
+
+How to added to menu strip:
+ToolStripMenuItem MRU = new ToolStripMenuItem(LocationOfFile, null, method_Click);
+recentListToolStripMenuItem.DropDownItems.Add(MRU);
+What Method_Click does is it calls a click method which uses the ‘LocationOfFile’ to open that file.
+To get this information use ‘sender.tostring()’.
+
+Button Coding:
+The MRU (Most-recently-used) list must be on the ‘Main Form’ since we’re using child forms
+The Open button can be on either (but personally found it easier on the ‘Main Form’)
+The Save button must be on  Child Form (File/Text Editor Form)
+Found ‘Status Bar’ useful for displaying ‘ErrorProvider’ since icon can’t appear since textbox is filling form.
+    
+
+Note:  Remember the Program Documentation Guidelines and Submission Guidelines.
+
+ 
+
+
+Deliverables are due 10pm (Atlantic Standard Time) on the due date.
+
+
+File Name and Title line should be as follows: Course#_Task#_StudentLastName_StudentFirstName

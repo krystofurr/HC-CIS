@@ -1,0 +1,9 @@
+7. Source Code Control: Version Control with Git
+
+When working in the industry, you will need to keep track of the revision history of your code, create separate versions for testing, and new releases, and you will need to share your code with other programmers.  Version control, or source control systems are not new in the software industry, and a modern system supports all kinds of software building requirements. Git has become a very popular control system for a number of reasons. 
+
+For this presentation, give a background primer on why source control is necessary, and what some of the challenges are. Introduce Git and provide a live demonstration of how it works. Discuss GitHub and what makes it is so popular.
+
+
+
+

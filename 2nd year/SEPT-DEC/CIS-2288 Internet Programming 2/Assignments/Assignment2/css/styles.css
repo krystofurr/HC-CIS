@@ -1,0 +1,93 @@
+/**
+
+d888b  db    db d88888b .d8888. d888888b   d8888b.  .d88b.   .d88b.  db   dD
+88' Y8b 88    88 88'     88'  YP `~~88~~'   88  `8D .8P  Y8. .8P  Y8. 88 ,8P'
+88      88    88 88ooooo `8bo.      88      88oooY' 88    88 88    88 88,8P
+88  ooo 88    88 88~~~~~   `Y8b.    88      88~~~b. 88    88 88    88 88`8b
+88. ~8~ 88b  d88 88.     db   8D    88      88   8D `8b  d8' `8b  d8' 88 `88.
+Y888P  ~Y8888P' Y88888P `8888Y'    YP      Y8888P'  `Y88P'   `Y88P'  YP   YD
+
+
+Program name:       Assignment 2 - Guest Book
+Author:             Christopher Sigouin
+Version:            1.0
+Description:        A guest book  web application with user registration and authentication
+Dependencies:       See README
+Database file:      db/database.sql
+Change History:     2015.10.03 Original version by CJS
+
+ */
+
+/* Used with Text Areas */
+#comment {
+    resize: none;
+}
+
+/* Used for title in comment */
+.commentTitle {
+    font-weight: bold;
+}
+
+/* Styles for each comment */
+.commentBox {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    padding: 1%;
+    width: 40%;
+    border: solid grey 2px;
+    border-radius: 10px;
+    background-color: #E6FFCC;
+    /* REF: http://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* Styles for comment form */
+.commentForm {
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+/* REF: http://stackoverflow.com/questions/7668703/how-do-you-align-270deg-rotated-text-to-top-left */
+.banner {
+    -ms-transform: rotate(90deg) translate(-100%, 0); /* IE 9 */
+    -ms-transform-origin: 0 0;
+    -webkit-transform: rotate(90deg) translate(-100%, 0); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 0 0;
+    transform: rotate(-90deg) translate(-100%, 0);
+    transform-origin: 0 0;
+
+}
+
+
+/* OVER RIDDEN BOOTSTRAP CLASS SELECTORS */
+
+.modal-content {
+    padding: 10%;
+    border: solid black 2px;
+}
+
+.navbar-default {
+    background-image: none;
+    background-color: #145214;
+    border: solid #145214;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    /* REF: http://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-text {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+

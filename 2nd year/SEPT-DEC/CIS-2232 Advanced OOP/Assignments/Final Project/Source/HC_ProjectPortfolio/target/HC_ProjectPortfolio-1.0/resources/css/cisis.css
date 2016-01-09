@@ -1,0 +1,46 @@
+.container {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 4px;
+
+}
+
+.container-images {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 4px;
+    float: left;
+    display: block;
+}
+
+.nospace {
+    font-size: 0;
+}
+
+.form-horizontal {
+    width: 100%;
+}
+
+input[type="text"] {
+    height: 25px;
+}
+
+.navbar .nav > li > a {
+    color: #000000;
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+.cisis {
+    background-color: #D6CADD;
+    border-radius:5px;
+    vertical-align: middle;    
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}

@@ -1,0 +1,12 @@
+c:\users\windoz\documents\visual studio 2012\Projects\Internet Merchandise Provider\Internet Merchandise Provider\bin\Debug\Internet Merchandise Provider.exe.config
+c:\users\windoz\documents\visual studio 2012\Projects\Internet Merchandise Provider\Internet Merchandise Provider\bin\Debug\Internet Merchandise Provider.exe
+c:\users\windoz\documents\visual studio 2012\Projects\Internet Merchandise Provider\Internet Merchandise Provider\bin\Debug\Internet Merchandise Provider.pdb
+c:\users\windoz\documents\visual studio 2012\Projects\Internet Merchandise Provider\Internet Merchandise Provider\obj\Debug\Internet Merchandise Provider.csprojResolveAssemblyReference.cache
+c:\users\windoz\documents\visual studio 2012\Projects\Internet Merchandise Provider\Internet Merchandise Provider\obj\Debug\Internet_Merchandise_Provider.Properties.Resources.resources
+c:\users\windoz\documents\visual studio 2012\Projects\Internet Merchandise Provider\Internet Merchandise Provider\obj\Debug\Internet Merchandise Provider.csproj.GenerateResource.Cache
+c:\users\windoz\documents\visual studio 2012\Projects\Internet Merchandise Provider\Internet Merchandise Provider\obj\Debug\Internet Merchandise Provider.exe
+c:\users\windoz\documents\visual studio 2012\Projects\Internet Merchandise Provider\Internet Merchandise Provider\obj\Debug\Internet Merchandise Provider.pdb
+C:\Users\windoz\Documents\Visual Studio 2012\Projects\Internet Merchandise Provider\Internet Merchandise Provider\obj\Debug\Internet_Merchandise_Provider.InternetMerchandiseProvider.resources
+E:\SEPT-DEC\Windows Programming\Assignments\Topic2\Internet Merchandise Provider\Internet Merchandise Provider\bin\Debug\Internet Merchandise Provider.exe.config
+E:\SEPT-DEC\Windows Programming\Assignments\Topic2\Internet Merchandise Provider\Internet Merchandise Provider\obj\Debug\Internet Merchandise Provider.exe
+E:\SEPT-DEC\Windows Programming\Assignments\Topic2\Internet Merchandise Provider\Internet Merchandise Provider\obj\Debug\Internet Merchandise Provider.pdb

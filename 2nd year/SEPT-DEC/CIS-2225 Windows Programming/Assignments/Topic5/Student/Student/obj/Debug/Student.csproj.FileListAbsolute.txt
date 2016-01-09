@@ -1,0 +1,5 @@
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\Student\Student\bin\Debug\Student.dll
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\Student\Student\bin\Debug\Student.pdb
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\Student\Student\obj\Debug\Student.csprojResolveAssemblyReference.cache
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\Student\Student\obj\Debug\Student.dll
+E:\SEPT-DEC\Windows Programming\Assignments\Topic5\Student\Student\obj\Debug\Student.pdb

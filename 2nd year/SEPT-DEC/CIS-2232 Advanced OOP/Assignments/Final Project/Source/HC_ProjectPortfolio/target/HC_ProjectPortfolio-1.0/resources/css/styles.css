@@ -1,0 +1,35 @@
+
+
+.imageCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.testBlock {
+    height: 300px;
+    background-color: green;
+    border: solid black 2px;
+}
+
+.designDocument {
+     width: 100%;
+     height: 900px;
+
+}
+
+
+
+
+
+
+
