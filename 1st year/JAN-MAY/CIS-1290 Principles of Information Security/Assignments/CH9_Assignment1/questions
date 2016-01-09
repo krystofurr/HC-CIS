@@ -1,0 +1,66 @@
+1.How does physical access control differ from logical access control as described in earlier chapters? How is it similar?
+
+	Physical access control differs from logical access control as described in earlier chapters by outlining how physical controls can protect the confidentiality, integrity and availability of physical resources that most logical controls would fail to protect.  They are similiar because they are both utilized by an organization to provide protection against the same assets.
+
+
+2.What are the two possible modes that locks use when they fail? What implications does this have for human safety? In which situation is each preferred?
+
+	The two possible modes that locks use when they fail are " fail-safe " and "fail secure".
+
+	The implications that these modes have for human safety are seperate in conjunction 		with how they affect a locking mechanism.  In the event of a lock failure due to power loss or fire control system activation, the fail-safe lock would release its locking mechanism to allow access for human safety reasons. The fail-secure lock ensures that the locking mechanism does not release.  This is due to its placement for protection of an area that is viewed as more important than human safety.
+
+	The situations that each mode would be preferred would be:
+
+		Securing of an exit - Fail Safe Lock Mode
+		Securing of a nuclear weapon - Fail Secure Lock Mode
+
+
+3.What does HVAC stand for? Why is this a topic of concern for physical security? What four physical characteristics of the indoor environment are controlled by a properly designed HVAC system? What are the optimal temperature and humidity ranges for computing systems?
+
+	HVAC stands for heating, ventilating and air conditioning.   
+
+	It is a topic of concern for physical security because the physical environment that resources are subjected to can greatly affect a resources integrity. 
+
+	The four characteristcs of the indoor environment that are controlled by a properly designing HVAC system are:
+
+	 Temperature
+	 Filtration
+	 Humidity
+	Static electricity  
+
+	The optimal temperature and humidity ranges for computing systems are:
+
+	TEMPERATURE:  70 - 74  Fahrenheit ( 21 - 23 Celsius )
+	HUMIDITY: 40% - 60% 
+
+4.List and describe the four primary types of UPS systems. Which is the most effective and the most expensive and why?
+
+The four primary types of UPS systems are:
+
+Standby or Offline
+Ferroresonant standby
+Line-interactive
+Double conversion online (True online)
+
+The most effective and most expensive type of UPS would be the True online UPS.  It is the most effective due to its ability to provide a clean filtered supply of power to the connecting device from its battery and there is no time delay caused by power loss because the connecting device is always fed by the battery.  Due to this type of UPS being considered as "top-of-the-line " causes the cost of purchase to be the highest out of each type.
+
+
+5.List and describe the three fundamental ways that data can be intercepted. Why is data interception considered a part of physical security? How can you protect against each?
+
+Three fundamental ways that data can be intercepted are:
+
+Direct observation
+Interception of data transmissions
+Electromagnetic interception
+
+Data interception is considered a part of physical security because physical means of interception can also take place such as direct wiretaps and direct splicing into information system cabling. 
+
+
+You can protect against each type in the following ways:
+
+Direct observation - Employees forbidden to take home information that is sensitive or ensuring that high security measures are implemented in the environment where the information resides.
+
+Interception of data transmissions - Periodic inspecitions on all ports on networking devices and utilization of cabling that ensures difficulty in splicing.
+
+Electromagnetic interception - Electromagnetic shielding on information systems to prevent signals from escaping, positioning equipment from external walls and distancing from structures that carry radio waves.
+

@@ -1,0 +1,86 @@
+Read chapter 10 'Transactional Management and Concurrency Control'  of the course text.
+Read chapter 11 'Database Performance Tuning and Query Optimization'  of the course text.
+Complete and Submit chapter 11 problems 17 thru 21 inclusive.
+Read chapter 15 'DataBase Administration and Security of the course text.
+
+
+Problems 17–21 are based on the following query:
+
+SELECT       V_CODE, V_NAME, V_CONTACT, V_STATE 
+FROM          VENDOR 
+WHERE        V_STATE = 'TN' ORDER BY V_NAME;
+
+17.  What indexes should you create and why? Write the SQL command to create the indexes.
+ 
+You should create an index on V_STATE based on the following query.  The index selectivity of V_STATE would be highest compared to V_NAME and V_CONTACT.  V_CODE would likely be a PK so it would already be indexed.
+
+SQL COMMAND TO CREATE THE INDEX:
+
+CREATE INDEX V_STATE_NDX ON VENDOR ( V_STATE );
+
+	Unique would be omitted in this case as there is the possibility of repeating values under the attribute of V_CODE. 
+
+
+18.  Assume that 10,000 vendors are distributed as shown in Table P11.18. What percentage of rows will be returned by the query?
+
+The percentage of rows that will be returned by the query based on the distrubution of vendors shown in Table 11.18 would be .01%. 
+
+113 Vendors / 10,000 Total Vendors = 0.0113%
+
+ 
+19.  What type of I/O database operations would most likely be used to execute the query?
+ 
+Read operation to retrieve the specified attributes from the VENDOR table based on the WHERE condition
+Read operation to compare values for the ORDER BY clause
+Write operation to write the data retrieved into the data cache
+Write operation to write the processed version of the SQL statement in the SQL cache
+Write operation to output the results to the screen for the user
+
+20.  Using Table 11.4 as an example, create two alternative access plans.
+ 
+SELECT       V_CODE, V_NAME, V_CONTACT, V_STATE 
+FROM          VENDOR 
+WHERE        V_STATE = 'TN' ORDER BY V_NAME;';
+
+PLAN A
+	A1 - Select rows with V_STATE = 'TN' - 10,000 - 10,000 - 113 - 10,000
+	A2 - Order by V_NAME in A1 - 113 - 113 - 113 - 10,113
+
+PLAN B
+	B1 - Order by V_NAME - 10,000 - 10,000 - 10,000 - 10,000
+	B2 - Select rows in B1 with V_STATE = 'TN' - 10,000 - 10,000 - 113 - 20,000
+
+
+
+21.  Assume that you have 10,000 different products stored in the PRODUCT table and that you are writing a Web-based interface to list all products with a quantity on hand (P_QOH) that is less than or equal to the minimum quantity, P_MIN. What optimizer hint would you use to ensure that your query returns the result set to the Web interface in the least time possible? Write the SQL code.
+
+In order to ensure that my query returns the result set to the web interface in the least time possible, I would use INDEX(name) as a first choice assuming that P_QOH has an index created to use.  Otherwise my next choice would be ALL_ROWS as it would be required to list " all " products so an overall optimization would be required to return the result set as soon as possible.
+
+With MySQL optimization,  I would utilize an index on P_QOH as above if it exists.  If not, I would use HIGH_PRIORITY with the select to ensure that it gets executed as soon as possible.
+
+
+
+( This assumes P_MIN is a derived attribute within the table )
+
+SELECT /*+ INDEX(P_QOH_NDX) */
+FROM PRODUCT
+WHERE P_QOH <= P_MIN;
+
+OR
+
+SELECT /*+ ALL_ROWS  */*
+FROM PRODUCT
+WHERE P_QOH <= P_MIN;
+
+(MySQL version)
+
+SELECT P_QOH FROM PRODUCT USE INDEX( P_QOH )
+WHERE P_QOH <= P_MIN;
+
+OR
+
+SELECT HIGH_PRIORITY P_QOH FROM PRODUCT
+WHERE P_QOH <= P_MIN;
+
+
+

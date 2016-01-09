@@ -1,0 +1,253 @@
+QUESTIONS:
+	For the references sheet, should this be a physical sheet handed in or can it be part of 	the powerpoint presentation as a hidden slide ( meaning it's not shown during the 	 	 presentation )?
+
+	The handout itself can be the powerpoint?
+
+	Are we allowed a video in the presentation?
+
+	
+
+	
+
+PASSWORD MANAGERS
+--------------------
+15 Minute Max presentation 
+
+-Presentation of the Topic
+	- Powerpoint
+	- Research
+
+-Associated Handout
+	- can be powerpoint printout , informal report, etc
+
+-Resources/References page
+	-at least one published academic article
+
+---------------------
+
+OUTLINE ( 5 sections / at least 3 slides each - 1 minute per slide [ except maybe lastpass section ] )
+-----------
+
+-Title Slide
+-Presentation Table of Contents Slide
+	Briefly state the purpose of the presentation
+	Go over the different sections
+
+-Intro ( 2 min )
+	What is a Password Manager - 30 sec
+	How they work - 1 min
+	Who uses them? - 30 sec
+
+-Types of Password Managers ( 3 min )
+	-Types of Password Managers - 1 min
+	-List of Password Managers -  1 min
+        -Advantages/Disadvantages - 1 min
+	-Top Password Managers Available
+		Screenshop and list Top 5
+
+-In-depth with LastPass ( 5 min - Video is 1min 50 seconds / 3 min for other slides )
+	History Lesson ( if possible )	
+	Short Video Demo ( 1min50 seconds )
+	Overview
+
+-Security Issues ( 3 min )
+	- How safe are they really?
+	- Things to look for when choosing a password Manager
+ 	- Specific Vulnerabilities
+	
+
+-Conclusion ( 2 min )
+	Summary of Presentation
+	Personal opinion on Password Managers
+
+
+ROUGH NOTES
+-----------
+
+================================================
+INTRO
+================================================
+
+This presentation will cover 
+
+WHAT IS A PASSWORD MANAGER
+=================================================
+
+- write all their passwords down on a piece of paper or stick it notes over top of a monitor
+- use the same password for both their personal and work accounts. 
+
+------
+
+- A password manager is a software application that helps a user store and organize passwords. 
+
+- Also called a password vault or virtual safe
+
+- Core functionality of a password manager is to securely store large collections of passwords
+
+- Usually store passwords encrypted, requiring the user to create a master password; a single, ideally very strong password which grants the user access to their entire password database.
+
+- Some password managers store passwords on the user's computer, whereas others store data in the cloud. 
+
+- Many provide additional features such as form filling and password generation.
+
+
+
+
+
+HOW THEY WORK?
+=================================================
+
+-stores all passwords in one central location ( database on computer or mobile device, or in the cloud ). CAN BE UNENCRYPTED OR ENCRYPTED
+
+-secured by a single master password ( which should be strong because it's access to your collection of passwords! ).  This may deter people from using password managers
+
+-can integrate into your browser ( mobile devices 
+
+
+WHO USES THEM?
+=================================================
+
+Normal user and/or Enterprise class
+
+
+
+================================================
+TYPES OF MANAGERS
+================================================
+
+PASSWORD MANAGER TYPES
+=================================================
+
+
+LIST OF PASSWORD MANAGERS
+=================================================
+
+
+
+ADVANTAGES / DISADVANTAGES
+=================================================
+
+	Different types of password managers may have different advantages and disadvantages compared to each other based on their types.  Below are some generalized listings as well as some specifics to different types
+
+ADV
+---
+
+SHORT LIST
+---
+-ease of use 
+-cross platform
+-automated updates of new site password creation
+-easily incorported into most software
+-additional features besides password management
+-defense against phishing / pharming
+-protection against keystroke logging malware
+
+
+	they are easily incorporated in most software using APIs available in many software 	products, they require no extensive computer/server modifications, and that users are already familiar with the use of passwords
+
+many provide additional features such as form filling[1] and password generation.[2]
+
+Password managers can also be used as a defense against phishing and pharming. Unlike human beings, a password manager program can also incorporate an automated login script that first compares the current site's URL to the stored site's URL. If the two don't match then the password manager does not automatically fill in the login fields. This is intended as a safeguard against visual imitations and look-alike websites.
+
+Password managers can protect against keyloggers or keystroke logging malware. When using a multi-factor authentication password manager that automatically fills in logon fields, the user does not have to type any user names or passwords for the keylogger to pick up.
+
+-ease of use. you don't have to remember your collection of passwords.  Only a single password!
+
+-As you update your own password information on a given site, the manager can update it in it's own database system
+
+DISADV
+---
+
+SHORT LIST
+---
+
+-cannot protect against man-in-the-browser attacks
+-compromised master password
+-master password is discovered by keystroke logging malware
+
+password managers cannot protect against Man-in-the-browser attacks, where malware on the user's device performs operations (e.g. on a banking website) while the user is logged in while hiding the malicious activity from the user.
+Man in the browser attack is a proxy Trojan horse[1] that infects a web browser by taking advantage of vulnerabilities in browser security to modify web pages, modify transaction content or insert additional transactions, all in a completely covert fashion invisible to both the user and host web application. A MitB attack will be successful irrespective of whether security mechanisms such as SSL/PKI and/or two or three-factor Authentication solutions are in place.
+
+Desktop password managers and browser based password managers are convenient; however, they often do not provide any protection for stored passwords. If the computer is on, it is possible for another individual to access the password manager and read the user's password. 
+
+A compromised master password renders all of the protected passwords vulnerable. This demonstrates the inverse relation between usability and security: a single password may be more convenient (usable), but if compromised would render all of the held passwords compromised.
+
+the master password may also be attacked and discovered using key logging or acoustic cryptanalysis
+
+
+
+================================================
+IN DEPTH LAST PASS ANALYSIS
+================================================
+
+HISTORY LESSON
+=================================================
+
+First worked together developing integrated VoIP (voice over the Internet) and e-commerce technology at eStara, Inc. where they designed, built, launched the most widely deployed web-based 'Push to Talk', 'Call Tracking' and 'Click-to-Chat' services in the world.
+
+Their clients included leading e-commerce and financial services brands like Amazon, HSBC, Dell, TD Canada Trust, American Express and Yahoo. 
+
+
+
+
+VIDEO
+=================================================
+
+	Short Demo  on Adding a site and using LastPass to access it
+
+1MIN 50SEC
+
+
+OVERVIEW
+=================================================
+
+We’ve built LastPass with AES 256-bit encryption, the strongest encryption standard currently available.
+
+- SLIDE WITH ALL FEATURES
+	( explain a few of them )
+
+
+
+
+================================================
+SECURITY ISSUES
+================================================
+
+HOW SAFE ARE THEY REALLY?
+=================================================
+
+
+
+WHAT MAKES A GOOD PASSWORD MANAGER - THINGS TO LOOK FOR 
+=================================================
+
+
+
+SPECIFIC VULNERABILITIES
+=================================================
+
+-Review wikipedia
+
+
+================================================
+CONCLUSION
+================================================
+
+SUMMARY ON PRESENTATION
+=================================================
+
+
+
+PERSONAL OPINION ON PASSWORD MANAGERS
+=================================================
+
+
+
+
+
+
+
+
+
+
+

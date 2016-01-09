@@ -1,0 +1,75 @@
+/*
+################# CIS-2286 Internet Programming Part I PWC ##################
+	Author: Christopher Sigouin
+	Date: March 27, 2015
+	Purpose: Assignment 6
+	Dependencies: 
+*/	
+
+
+
+table {
+	margin: 0 auto;
+}
+
+table td {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+ul {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#footer { /* Footer ID specified by the Mr. Itus */
+	text-align: center;
+	font-family: 'arial';
+	font-size: 20px;
+	font-style: italic;
+	color: #307D7E;
+}
+
+.techSkills {
+	width: 60%;
+}
+
+.education {
+	width: 60%;
+}
+
+.education td { /* Every TD element align left */
+	text-align: left;
+}
+
+.education td:nth-child(even) { /* Every even TD element align right */
+	text-align: right;
+}
+
+.achieve > p { /* All children of the element with the class "achieve" */
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.workHistory {
+	width: 60%;
+}
+
+.workHistory td  {  /* Every TD element align left */
+	text-align: left;
+}
+
+.workHistory td:nth-child(even) { /* Every even TD element align right */
+	text-align: right;
+}
+
+.references td {
+	padding: 1%;
+}
+
+.textCenter {
+	text-align: center;
+}

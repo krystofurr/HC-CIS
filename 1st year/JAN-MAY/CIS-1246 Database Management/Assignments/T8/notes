@@ -1,0 +1,79 @@
+Create a Trigger, for the SaleCo database, that will support:
+
+Upon adding (Inserting) a new invoice into the Invoice table (simply disregard the need to update the Line table with invoice line item information).
+The trigger should automatically Update the Customer in the Customer table by adding the new invoice onto the Customer Balance attribute. 
+Clarification:    No hard coding of the inserted invoice amount in the trigger.  The SQL should access the inserted amount in the Invoice table and add it to the customer balance attribute in the Customer table. 
+HINT:  may be done in one SQL query with sub-queries,  OR  using separate queries and maybe a variable. 
+
+
+
+SET @MY_CUS_CODE = 10014;
+UPDATE CUSTOMER
+SET CUS_BALANCE = 0
+WHERE CUS_CODE = @MY_CUS_CODE;
+
+DELETE FROM INVOICE
+WHERE INV_NUMBER = 1009;
+
+
+
+-- Insert SQL to trigger with variable for customer code
+SET @MY_CUS_CODE = 10014;
+INSERT INTO INVOICE(INV_NUMBER, CUS_CODE, INV_DATE, INV_SUBTOTAL, INV_TAX, INV_TOTAL) VALUES 
+('1009',@MY_CUS_CODE,SYSDATE(), '4', '1', '5');
+
+
+-- Sets the trigger to update the customer balance based on customer code
+CREATE TRIGGER TRG_NUM_5 AFTER INSERT ON INVOICE
+FOR EACH ROW
+BEGIN
+UPDATE CUSTOMER
+SET CUS_BALANCE = 
+(SELECT ROUND(SUM(INV_TOTAL),2) AS Total
+FROM
+(SELECT * FROM INVOICE WHERE CUS_CODE = @MY_CUS_CODE) AS T1)
+WHERE CUS_CODE = @MY_CUS_CODE;
+END;
+/
+
+-- According to the original invoice amounts and the new inserted invoice amount
+26.89 + 429.66 + 5 = 461.55
+
+
+Create a Stored Procedure, for the SAleCo database, that will:
+Delete a Customer from the Customer table by accepting the Cust_Code as a procedure parameter when you CALL the procedure to be executed in the SQL window/tab within PhP MySQL..
+Delete all associated rows for this Customer in the tables  Invoice and Line.
+
+
+-- Creates the stored procedure
+CREATE PROCEDURE myProcedure (IN cusCode INT)
+BEGIN
+-- Delete all rows from the CUSTOMER table based on cusCode
+DELETE FROM CUSTOMER WHERE CUS_CODE = cusCode;
+-- Delete all rows from LINE table based on cusCode from INVOICE table
+DELETE FROM LINE
+WHERE INV_NUMBER IN 
+(SELECT INV_NUMBER FROM INVOICE WHERE CUS_CODE = cusCode );
+-- Delete all rows from INVOICE based on cusCode
+DELETE FROM INVOICE WHERE CUS_CODE = cusCode;
+END;
+/
+
+-- Run inserts to create a customer for deletion by the procedure with code 10077
+INSERT INTO CUSTOMER(CUS_CODE, CUS_LNAME, CUS_FNAME, CUS_INITIAL, 
+CUS_AREACODE, CUS_PHONE, CUS_BALANCE) VALUES 
+('10077','Sigouin','Christopher','J','902','628-6964','333');
+INSERT INTO INVOICE(INV_NUMBER, CUS_CODE, INV_DATE, INV_SUBTOTAL, INV_TAX, INV_TOTAL) VALUES 
+('1009',10077, SYSDATE(), '4', '1', '5');
+INSERT INTO LINE(INV_NUMBER, LINE_NUMBER, P_CODE, LINE_UNITS, LINE_PRICE) VALUES 
+('1009','1','JFKDJSAFKDA','3','4.99');
+
+-- Run the procedure to delete the inserts that were executed
+CALL myProcedure(10077);
+
+
+
+
+
+
+

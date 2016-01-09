@@ -1,0 +1,60 @@
+/*
+
+##################################################
+
+	Author: Christopher Sigouin
+	Date: October 23, 2014
+	Purpose: Assignment 4 / Part 1 / Tip Calculator
+	Dependencies: myTipCalculator.html, myJsLibrary.js
+
+##################################################
+
+*/
+
+/* =============== ELEMENT SELECTORS START ================ */
+
+input.center{ width: 5em; } /* Set width for each text field */
+
+label{ /* Set label to block. Organizes the fields better */
+       display: block;
+       text-align: center;
+       margin-bottom: 10px;
+}
+
+/* =============== ELEMENT SELECTORS END ================ */
+
+/* =============== ID SELECTORS START ================ */
+
+#mainDiv { /* main DIV on the page */
+    width: 700px;
+    margin: 0 auto;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    font-family: "Verdana";
+}
+
+#calculateButton { /* Used with the <button> tag for calculating */
+    width: 15em;
+    height: 3em;
+    display: block;
+    margin: 0 auto;
+}
+#results { /* results ID for the DIV where output will show */
+    padding-top: 10px;
+    height: 150px;
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+/* =============== ID SELECTORS END ================ */
+
+/* =============== CLASS SELECTORS START ================ */
+
+.center { /* General class tag used to center things */
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* =============== CLASS SELECTORS END ================ */

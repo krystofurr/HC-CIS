@@ -1,0 +1,65 @@
+
+
+
+What is the typical relationship among the untrusted network, the firewall, and the trusted network?
+
+The typical relationship among the untrusted network, the firewall, and the trusted network is that the firewall constitudes as a barrier
+between the two types of networks.  Its function is to prevent the transfer of information types between the untrusted and trusted network.
+
+
+How is an application layer firewall different from a packet filtering firewall? Why is an application layer firewall sometimes called a proxy server?
+
+An application layer firewall is different from a packet filtering firewall in the following ways:
+
+Application Layer Firewall 
+Work on the Session, Presentation and Application Layers of the OSI model
+Frequently installed on a dedicated computer
+Designed for one or a few protocols and cannot be easily reconfigured for different attacks
+Second generation Firewall
+Monitors protocols
+
+Packet Filtering Firewall 
+Work on the Network Layer of the OSI model
+Packet Filtering Firewall have 3 subsets ( Static, Dynamic and Stateful )
+Can be First, Third, and Forth generation Firewalls ( Depending on Subset )
+Monitors packets
+
+An application layer firewall is sometimes called a proxy server because it acts as an authorized entity to provide service requests
+due to the nature of how its software works.  Some examples of it's use can be serving requests for a Web Server
+and preventing interal requests access to areas outside the trusted network.
+
+
+List and describe the three widely used authentication mechanisms/factors.
+
+
+The three widely used authentication mechanisms/factors are the following:
+
+Something a supplicant knows
+	What you know and call recall
+Something a supplicant has
+	What you have or can produce when necessary
+Something a supplicant is
+	Use of biometrics
+
+What is a DMZ? Is this really a good name, considering the function this type of subnet performs?
+
+A DMZ (Demilitarized Zone) is an area between the trusted and untrusted network where neither network controls it.  
+
+A DMZ is a good name considering the function this type of subnet performs because the derived form of a DMZ 
+is a border area between two nation states where no military operation is allowed, hence no one controls it.  In the network
+version, a DMZ is similiar in nature where it's not as secure as the trusted network and not as insecure as the untrusted network.
+
+What is a VPN? What are some reasons it is widely popular in many organizations?
+
+A VPN is a virtual private network (VPN) that allows a secure private network connection over a public network.  A system
+connecting to the VPN from the public network would seem as if it was connecting from within the private network.
+
+Some reasons it is widely popular in many organizations are as follow:
+
+- cost savings ( eliminates need for leases lines, telephone charges, etc )
+- employees work from home
+- employees( road warriors ) take business trips and require communication back to the organizations network
+- ability to have multiple offices around the world and still communicate as if there was one
+
+  
+ 

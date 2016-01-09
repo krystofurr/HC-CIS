@@ -1,0 +1,71 @@
+
+What are cryptography and cryptanalysis?
+
+
+Cryptography is the procedure to secure the transmission of data by developing and utilizing codes.  
+Cryptanalysis is the procedure to acquire the plaintext from the ciphertext without knowing what was
+used to perform the encryption.
+
+What is a hash function, and what can it be used for?
+
+A hash function is a mathematical algorithm that generates a fingerprint.  The fingerprint is not a
+ciphertext of the message, but a code that is generated based on the message.
+It is used to confirm the identity and integrity of a message.  This is important so that the message 
+can be verified as authentic and is not altered from its original state.
+
+
+What is the fundamental difference between symmetric and asymmetric encryption?
+
+The fundamental difference between symmetric and asymmetric is that symmetric uses the same
+key to encrypt and decrypt a message whereas asymmetric uses two keys.  One key
+will be used to encrypt a message ( public key ) and the other to decrypt the message ( private key ).
+
+
+How does Public Key Infrastructure protect information assets?
+
+Public-key Infrastructure (PKI) is an integrated system of software, encryption methodolo-
+gies, protocols, legal agreements, and third-party services that enables users to communicate
+securely. PKI systems are based on public-key cryptosystems and include digital certificates
+and certificate authorities (CAs).
+
+
+
+Public Key Infrastructure protects information assets by using a combination of components.  These components are the following:
+
+Certificate Authority -  issues, manages, authenticates, signs, and revokes
+users’ digital certificates
+
+Registration Authority - operates under Certificate Authority.  Can complete verification of registration information, generate end-user keys, revoke certificates and validate user certificates.
+
+Certificate Directories - central point for storing certificates
+
+Management protocols - manages communications between CAs, RAs and end users.
+
+Policies and procedures - assists with application and management of certificates shaped by  legal liabilities and limitations and with actual organization usage.
+
+
+
+
+What is the difference between digital signatures and digital certificates?
+
+The difference between digital signatures and digital certificates is that a digital signature is
+an asymmetric encrypted based hash value that is placed on a message to verify its
+owner and its integrity whereas a digital certificate is a document that uses a digital signature to authenticate a public key contained in it.
+
+
+
+- Download and Run the MD5 & SHA Checksum Utility from CNET's Download.com (use link in Topic folder). 
+- Download the PowerPoint file located in this topic folder (9781111138219_PPT_ch08.ppt). (NOTE: do not make any changes to this file).
+- Generate Hash values for the PowerPoint file using the Checksum Utility.
+
+What is the SHA-1 Hash for this PowerPoint file? (Paste it in the answer box).
+
+
+The SHA-1 Hash for the file located in this topic folder is D85BF77BD556D9194E0FD66E39F641D535C354BA
+
+
+
+HTML Editor
+
+  
+ 

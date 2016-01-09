@@ -1,0 +1,27 @@
+
+CHANGED
+-----------------------
+
+CURRENT EFFORTS
+a) People who are teaching malware –intro :: Evan
+
+========================================================
+A few people of education have realized this and have introduced new methods of learning in the fields of computer science.  Their main goals are common in nature.  We took the liberty of contacting these professors via email to ensure that we could deliver their message clearly to you all today.  Their responses were more than helpful.  Let’s take a look at them now…   
+
+========================================================
+
+
+
+CHANGED
+----------------------
+
+3) CONCLUSION
+a) Review/summary of history and current efforts :: Mike
+
+
+========================================================
+
+	The past contains many analogies that describe the teaching methods of these professors.  There certainly is a common pattern of "study then safeguard" showing in their examples.  As they move foward to spread solutions in places of higher learning, it is hopeful that the future of malware is a bleak and dismal one.
+========================================================
+
+

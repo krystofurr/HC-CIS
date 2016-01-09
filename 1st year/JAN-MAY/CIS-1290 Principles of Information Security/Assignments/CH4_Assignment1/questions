@@ -1,0 +1,69 @@
+
+1.	What is risk management? Why is identification of risks, by listing assets and their vulnerabilities, so important to the risk management process?
+
+Risk Management is the methodology of recognizing risks by documenting assets and their vulnerabilities within the association's data resources and framework.  To complete the process, a workflow is used to diminish the danger to an adequate level.
+
+The identification of risks, by listing assests and their vulnerabilities is important to the risk management process because to protect an asset you must first know what they are.  Then look into how they add worth and the vulnerabilities that can affect them.  Only then can you work towards a viable control to minimize the danger. 
+
+
+2.	Why do networking components need more examination from an information security perspective than from a systems development perspective?
+
+Networking components need more examination from an information security perspective than from a systems development perspective they are a definite focal point for attacks.  These components are considered special cases instead of being considered as a hardware and/or software component.
+
+
+3.	What are vulnerabilities and how do you identify them?
+
+Vulnerabilites are particular paths that threat agents can use to assault an information asset.
+
+You can identify them best by forming groups of people with varied backgrounds from within the organization.  Once a group is formed, they can work in sessions to brainstorm various possibilities that could occur.
+
+ The process of listing vulnerabilities is somewhat subjective and depends upon the experience and knowledge of the people creating the list. Therefore, the process works best when groups of people with diverse backgrounds within the organization work iteratively in a series of brainstorming sessions. For instance, the team that reviews the vulnerabilities of networking equipment should include the networking specialists, the systems management team that operates the network, the information security risk specialist, and technically proficient users of the system.
+
+4.	What are the four risk strategies for controlling risk?
+
+The five strategies for controlling risk are defend, transfer, mitigate, accept, and terminate. 
+
+5.	How is an incident response plan different from a disaster recovery plan?
+
+ An incident response plan differs from a disaster recovery plan in that, it is used for any incident
+that may occur and contains the answers on how to proceed if it should occur.  A disaster recovery plan 
+is like a portion of the incident response plan that is used in a specific occurance of an incident.
+It would be aimed towards more preparation before the incident occurs and the actions afterwards vs. 
+a more stable well-thought out process with a solid end result with the incident response plan.
+
+Incident Response Plan 
+
+The actions an organization can and perhaps should take
+while an incident is in progress should be specified in a document called the incident
+response (IR) plan. The IR plan provides answers to questions victims might pose in the
+midst of an incident, such as “What do I do now?” For example, a systems administrator
+may notice that someone is copying information from the server without authorization, sig-
+naling violation of policy by a potential hacker or an unauthorized employee. What should
+the administrator do first? Whom should he or she contact? What should he or she docu-
+ment? The IR plan supplies the answers. In the event of a serious virus or worm outbreak,
+the IR plan can be used to assess the likelihood of imminent damage and to inform key deci-
+sion makers in the various communities of interest (IT, information security, organization
+management, and users). The IR plan also enables the organization to take coordinated
+action that is either predefined and specific, or ad hoc and reactive.
+
+
+
+Disaster Recovery Plan 
+
+The most common of the mitigation procedures is the disaster
+recovery (DR) plan. Although media backup strategies are an integral part of the DR plan,
+the overall program includes the entire spectrum of activities used to recover from an inci-
+dent. The DR plan can include strategies to limit losses before and during the disaster.
+These strategies are fully deployed once the disaster has stopped. DR plans usually include
+all preparations for the recovery process, strategies to limit losses during the disaster, and
+detailed steps to follow when the smoke clears, the dust settles, or the floodwaters recede.
+The DR plan and the IR plan overlap to a degree. In many respects, the DR plan is the sub-
+section of the IR plan that covers disastrous events. The IR plan is also flexible enough to be useful in situations that are near disasters, but that still require coordinated, planned actions.
+While some DR plan and IR plan decisions and actions are the same, their urgency and out-
+comes can differ dramatically. The DR plan focuses more on preparations completed before
+and actions taken after the incident, whereas the IR plan focuses on intelligence gathering,
+information analysis, coordinated decision making, and urgent, concrete actions.
+
+  
+ 
+

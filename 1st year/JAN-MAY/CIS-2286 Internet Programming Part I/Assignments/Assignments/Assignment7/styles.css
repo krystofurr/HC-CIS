@@ -1,0 +1,56 @@
+/*
+################## CIS-2286 Internet Programming Part I PWC ##################
+	Author: Christopher Sigouin
+	Date: April 8, 2015
+	Purpose: Assignment 7
+	Dependencies:
+*/
+
+#container {
+	width: 650px;
+}
+
+#textContainer { /* Helps center the text block for the book display */
+	width: 40%;
+	text-align: left;
+
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.heading {
+	font-weight: bold;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.error {
+	color: red;
+}
+
+ol {
+	margin-left: -25px; /* Removes space left from bullet list */
+}
+
+li {
+	list-style-type: none; /* Removes numbered bullets */
+}
+
+label {
+	display: block;	
+}
+
+input[type="submit"] { /* Drop the submit button down a little */
+	margin-top: 10px;
+}
+
+p { /* Remove the spacing between p tags */
+	margin: 0; 
+    padding: 0;
+}
+

@@ -1,0 +1,43 @@
+Review: Full, Anonymous: No
+You will create a page that will allow us to search for employees within the Employees database.
+
+We will be using the employees database from the Topic 8 assignment.
+
+The form page you will build must be called employee-search.php. 
+
+The PHP page (for querying MySQL and displaying results) will be employee-search-results.php. 
+
+Provide the following search options on employee-search.php:
+
+This page should have a centered container <div> (id of employeeArea) to hold content (600px wide). The background of your page should be slate grey and the background of your container <div> should be white. 
+Please use a font size of 10px. Text and form items should be left aligned. Form should utilize a fieldset 
+tag with a legend set to 'Employee Search'.
+Allow a user to search using first name and last name. Allow the search to be peformed with empty fields. 
+hint: where first_name like "$firstName%"
+Provide a drop box to limit the number of return results. Options include 25, 100, 250, 500, 750. The default is 100.
+Provide a drop box to sort the result. Options include employee number, first name, last name, birth date. The default is last name.
+Provide a drop box to order the sorted results. Options include 'ascending' and 'descending'. Ascending is default.
+Submit the form request using GET.
+Other items to consider:
+
+Display the search results (Name, Employee Number, Hire Date, Birth Date, Gender) in a table with column headings (use <th> for heading tags, use same container and page formatting from the search page). I'd like to see some borders in the table - it's just easier to read. Please do this with CSS.
+Each result will occupy one row in the table. Please use a 'zebra' type effect for the background colors on the table rows, this makes them easier to read. For the even rows please use white, for the odd rows use #DFDFE6. Set the table width to occupy the total width of the container it is in. Set the name col width to 45% and the remaning col widths to 15%.
+If there are 0 results, please provide a message.
+Provide a link to return to the search page.
+Bonus (3 points applied to this assignment. Max is 50).
+
+Also include employeeInfo.php (your file from the topic 8 assignment). In your table of results make the employee number a hyperlink to employeeInfo.php. E.g. if a record has employee number of 10001, pass this along as the id to your info page. 
+
+Please submit employee-search.php, and employee-search-results.php, and employeeInfo.php (if attempting bonus).
+
+Marking Matrix
+
+/5 Comments, code alignment, no warnings or notices
+/5 CSS is applied to all pages as per requested specs - no html attribute formatting
+/5 HTML form contains all required fields - no missing tags
+/30 Mysqli - queries function properly(10), requirements are met (5) , db is closed (5), results are free (5), injection prevention (5)
+/5 CSS for table results including 'zebra' effect
+
+/3 Bonus - if applied (max is 50)
+
+Total: /50

@@ -1,0 +1,8 @@
+A Case Study in Malware Research Ethics Education
+http://www.ieee-security.org/TC/SPW2014/papers/5103a001.PDF
+
+People Patching
+http://www.eset.com/us/resources/white-papers/People_Patching.pdf
+
+Creating a Secure Computer Virus Laboratory
+http://pages.cpsc.ucalgary.ca/~aycock/papers/eicar04.pdf

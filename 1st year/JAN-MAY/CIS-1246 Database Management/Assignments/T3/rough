@@ -1,0 +1,25 @@
+COMPANY: Aetna
+
+PURPOSE: GROUP COVERAGE INSURANCE FOR ORGANIZATIONS
+
+
+Extract all data attributes from this source document.
+Take into consideration the following:
+A person can apply only once.
+You may/will have to assign codes as keys during the process.
+Identify a PK for the unnormalized table you just created in step 2.
+Draw a dependency diagram showing partial and tansitive dependencies.
+Move the DB structure from unnormalized to a 3NF table structure.
+Submit the Denpendency diagram and final 3NF table structure showing PKs, FKs and other supportive attributes you were required to include during this process. I.E.  A full ERD with Crow's Feet cardinality (PKs and FKs identified) exactly like ERD on page 292 Figure P7.44.  In Visio use the flowchart symbols and flow lines because it usually is easier versus the database symbols section.
+Submit as one Word document, as per you submission guidelines.
+
+
+
+
+
+ST_ADDR_ID
+BILL_ADDR_ID
+
+
+
+

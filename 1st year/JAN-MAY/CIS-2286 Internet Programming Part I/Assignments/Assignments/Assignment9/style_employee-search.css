@@ -1,0 +1,51 @@
+/*
+	################## CIS-2286 Internet Programming Part I PWC ##################
+		Author: Christopher Sigouin
+		Date: April 17, 2015
+		Purpose: Assignment 8
+		Dependencies: none
+*/
+
+body { /* Sets the background color to a slate grey */
+	background-color: #708090;
+}
+
+li {
+	margin-left: -25px; /* Removes the space caused by the bullets */
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+table { /* Table is width of parent container */
+	width: 100%;
+}
+
+td { /* All columns are set by default to 15% */
+	width: 15%;
+}
+
+table, th, td { /* Gives table elements a border */
+	border: solid black 1px;
+}
+
+td.name { /* Name column in table is set to 45% */
+	width: 45%;
+}
+
+.center { /* Used to center elements */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#employeeArea { /* Main DIV ID for search area */
+	width: 600px;
+	font-size: 10px;
+	background-color: #fff;
+	padding: 5px;
+}
+
+.zebraStripe { /* Used to strip all odd rows in the table */
+	background-color: #DFDFE6;
+}
+
+

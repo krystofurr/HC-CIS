@@ -1,0 +1,62 @@
+
+1	How does a network-based IDS differ from a host-based IDS?
+
+A network-based IDS differs from a host-baed IDS in the following ways:
+
+Network IDS 
+	Focuses on protecting information assests on the network
+	Has 2 types: Wireless IDPS and Network Behaviour Analysis IDPS
+	Can detect more attack types than a host based IDPS
+	More complex configuration and maintenance program
+	Requires access to all traffic for monitoring
+	Cannot monitor encrypted packets
+	Should be implemented first before a host based IDPS
+
+Host Based IDS
+	Focuses on protecting a server or hosts information assets
+	Used to focus on a specific application from special forms of attack vs a broad range of all applications
+	Can monitor encrypted data over the network and make decisions based on it
+	Can detect local events on host systems and attacks that a network based IDPS would miss
+	Switched network protocols do not affect a HIDPS
+	Have more management issues than NIPDS
+
+2	What is a honey pot? How is it different from a honey net?
+
+A honey pot is a bait framework intended to draw potential assailants far from critical systems.  It can also collect information about the attackers activities and keep the attacker occupied while an administrator can document the event and respond if possible.
+
+A honey net is different from a honey pot because a honey net is a collection of honey pots on an entire subnetwork
+
+
+3	What is an open port? Why is it important to limit the number of open ports a system has to only those that are absolutely essential?
+
+An open port is a TCP or UDP port, represented by a number, that is setup to accept communication.
+
+It is important to limit the number of open ports a system has to only those that are absolutely essential because an attacker could gain access through an open port and connect to a server or network device to take control of it.  It is a general rule to minimize all open ports on a network to the bare essential ports required for use.
+
+4	What capabilities should a wireless security toolkit include?
+
+The capabilities that a wireless security toolkit should include are the following:
+
+Ability to sniff wireless traffic
+Scan wireless hosts
+Survey the level of privacy or confidentiality managed on the wireless network
+
+
+5	Are any biometric recognition characteristics considered more reliable than others? Which are the most reliable?
+
+There are biometric recognition characteristics that are considered more reliable than others in the form of uniqueness.  Based on uniqueness the following are more reliable than others:
+	Fingerprints
+	Retina of the eye (blood vessel pattern)
+	Iris of the eye (random pattern of features found in the iris, including freckles, pits,
+	striations, vasculature, coronas, and crypts)
+
+
+Among all possible biometrics, only three human characteristics are usually considered truly
+unique. They are as follows:
+	Fingerprints
+	Retina of the eye (blood vessel pattern)
+	Iris of the eye (random pattern of features found in the iris, including freckles, pits,
+	striations, vasculature, coronas, and crypts)
+
+
+

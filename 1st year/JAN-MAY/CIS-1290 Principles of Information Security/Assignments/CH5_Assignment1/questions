@@ -1,0 +1,45 @@
+1.	How can a security framework assist in the design and implementation of a security infrastructure?
+
+A security framework can assist in the design and implementation of a security infrastructure by providing an information security strategy guide and documentation on changes to the organizations information security environment.  That would lead to the creation of the security blueprint which will have 
+the specific necessary ordered steps to achieve the framework requirements and create the security infrastructure.
+
+
+4.	What documents are available from the NIST Computer Resource Center, and how can they support the development of a security framework?
+
+The documents that are available from the NIST Computer Resource Center are the following: 
+
+SP 800-12: An Introduction to Computer Security: The NIST Handbook
+SP 800-14: Generally Accepted Security Principles and Practices for Securing Informa-
+tion Technology Systems
+SP 800-18 Rev. 1: Guide for Developing Security Plans for Federal Information
+Systems
+SP 800-26: Security Self-Assessment Guide for Information Technology Systems
+(removed from active list but still available in archives)
+SP 800-30: Risk Management Guide for Information Technology Systems
+
+They can support the development of a security framework by providing guidelines, philosophical principles, and practices that can be interpreted to create the
+framework.  Each document has it's advantages and disadvantages, but can be used with other documents to fulfill what one might lack in a specific area.
+
+11.	What is contingency planning? How is it different from routine management planning? What are components of contingency planning?
+
+Contingency planning is a method used to develop a backup plan incase of a failure with an exisiting plan.  An example would be the IR, DR and BC plans because they
+are use in contingency planning.  If the IRP fails, the use of DRP follows.  If DRP fails, the use of BCP follows.  
+
+Routine management planning is different from contingency planning because there is nothing to fall back on if/when the plan fails.  This method of planning could be used when there is an acceptable level of risk in the event of plan failure.  
+
+The components of contingency planning are:
+
+Contingency Plan => Business Impact Analysis => Incident Response Plan, Disaster Recovery Plan, Business Continuity Plan
+
+14.	When is the BC plan used? How do you determine when to use IR , DR, or BC plans?
+
+A BC ( Business Continuity ) plan would be used when a DR ( Disaster Recovery ) plan cannot fulfill the requirements for restoring assets and resources that are compromised.  It is initated side by side with a DR plan if this is the case.  
+
+You can determine when to use an IR, DR and BC plan by the severity of the incident which would be calculated by the BIA component of contingency planning.  When the incident occurs the IR plan would initiate to take control of the situation with an immediate response.  Although, if the incident is out of the IR plans scope, then the DR plan and/or BC plan will initiate to recover and restore the organizations needs.
+
+18.	What is computer forensics? When are the results of computer forensics used?
+
+Computer forensics is the procedure of gathering, dissecting, and saving computer related evidence.
+
+The results of computer forensics are used when an organization has an informal or formal/legal matter.  An informal matter could be a breach of policy or conduct that requires evidence to be reviewed, where a formal matter could be legal related and evidence is required in a court of law.
+

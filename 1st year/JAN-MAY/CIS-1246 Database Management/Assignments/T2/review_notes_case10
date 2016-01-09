@@ -1,0 +1,49 @@
+
+Chapter 3 Exercise #24
+
+I had emailed you regarding the use of a primary key as a candidate key in the exercise and you had stated the following:
+
+	No. It cannot be and update and primary key at the same time.  
+
+	Gerald Caissy 
+	Sent from my iPhone...
+
+I assumed that this was the same case for a superkey, but in the solution provided you have used the primary key again as super keys.  I understand that primary key comes from a minimalistic version of a superkey which is a candidate key.  
+
+	So am I correct to say that you can reuse a primary key as a superkey but not a candidate key?
+
+Chapter 3 Exercise #24 ( regarding EMPLOYEE table 'Candidate Key' )
+
+The key that you specified that is possible. 
+
+	EMP_LNAME + EMP_FNAME + EMP_INITIAL + EMP_DOB 
+
+Isn't this a possible scenario of duplication?  I believe that someone with the same first and lastname as well as inital could be born on the same day as another, although very rare it may happen.  Would phone number and area code be better than inital and dob?  Would it be more unique as the same person could not have the same area code and phone number?
+
+Chapter 3 Exercise #24 ( Secondary Keys )
+
+Is it better to combine attributes together to represent secondary keys?  Is this to minimize the results list?
+
+Chapter 3 Exercise #25 ( Initial ERD )
+
+How would you know from the tables provided in the question that their are two relationships linking from PILOT to CHARTER? The attributes for CHAR_PILOT and CHAR_COPILOT are not present in either PILOT and CO_PILOT tables.
+
+I noticed in the ERD solution that there is only one pilot entity where in the relational there are 2.  I must be missing something when designing an ERD.  Relationships ( when multiples ) from a single entity can reflect a new table in the relational diagram?
+
+The 0:M relationship between employee and pilot does not reflect in the relational diagram
+
+Chapter 3 Exercise #28 ( Revised Relational Diagram )
+
+The tables for EARNEDRATING and RATING? Why are they present?  Are they for the PILOT rating because there is no CO-PILOT table any longer to differentiate the two?  
+
+
+Chapter 4 Case 10
+
+
+
+A job candidate may have had many jobs -- remember that TEC is a temp employer. 
+
+SESSION AND COURSE ( M:N ) ?
+Over time, TEC will offer many training sessions for each course
+
+

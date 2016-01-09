@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+	Project Name: PORTFOLIO SUBMISSION
+	Filename: webProjects.html	
+	
+	Author: Christopher Sigouin
+	Date: 12/13/2014
+	Purpose: PORTFOLIO SUBMISSION
+	Dependencies:
+	    bootstrap.min.css, font-awesome.min.css, customerCSS.css, bootstrapValidator.css,
+	    jquery-1.11.1.js, bootstrap.js, customJS.js, bootstrapValidator.js,
+	    index.html, webProjects.html, javaProjects.html, blogPage.html, about.html,
+	    quotes.txt
+
+	References: No references needed as no images besides my own were used
+
+-->
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+	<meta name="description" content="A portfolio page for Christopher Sigouin.  Shows all software development projects and provides contact information and methods of contact." />
+	<meta name="keywords" content="portfolio, christopher, sigouin, web, project, pei, holland college, software developer, java" />
+	<meta name="author" content="Christopher Sigouin">
+	<meta name="robots" content="index, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PORTFOLIO OF CHRISTOHPER SIGOUIN</title>
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- CUSTOM CSS FILE -->
+	<link rel="stylesheet" type="text/css" href="css/customCSS.css"/>
+</head>
+<body>
+<br/><br/><br/>
+
+<div class="loadingBar">
+	Loading the page now...please hold on!
+	<div class="progress">
+		<div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+		</div>
+	</div>
+</div>
+
+<div id="hideContent">
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".testing">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">C.SIGOUIN</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse testing">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="javaProjects.html">java PROJECTS</a></li>
+					<li><a href="webProjects.html">web DEVELOPMENT</a></li>
+					<li><a href="blogPage.html">blog PAGE</a></li>
+				</ul>
+
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container container-grey">
+		<div class="row">
+			<div class="col-xs-12">
+				<span class="headingText-large hidden-xs">web PROJECTS</span>
+				<span class="headingText-med visible-xs">web PROJECTS</span>
+				<img class="img-responsive" src="img/coding.png"/>
+			</div>
+		</div>
+	</div> <!-- END: container -->
+
+
+	<div class="content container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+
+				<br/>
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title center-bold-text">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+									VOLUNTEER PROJECTS / OPEN SOURCE PROJECTS
+								</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+							<div class="panel-body">
+								This is where I will list off of my volunteer and open source projects.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+							<h4 class="panel-title center-bold-text">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									EDUCATION BASED ASSIGNMENTS / PROJECTS
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="panel-body">
+								I will list my educational assignments and projects here.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+							<h4 class="panel-title center-bold-text">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									SELF-TAUGHT PROJECTS / GAMES / MISC
+								</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="panel-body">
+								Anything that doesn't fit in the other two categories I will list them here
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="footer container">
+		<div class="row">
+			<div class="col-xs-6">
+				Copyright Christopher Sigouin
+			</div>
+			<div class="col-xs-6" id="dateDisplay">
+			</div>
+		</div>
+	</div> <!-- END: container -->
+</div>
+
+<!-- JQUERY -->
+<script src="js/jquery-1.11.1.js"></script>
+<!-- BOOTSTRAP -->
+<script src="js/bootstrap.min.js"></script>
+<!-- CUSTOM JS FILE -->
+<script src="js/customJS.js"></script>
+</body>
+</html>

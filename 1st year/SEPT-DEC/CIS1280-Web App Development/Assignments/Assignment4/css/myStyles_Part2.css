@@ -1,0 +1,56 @@
+/*
+
+##################################################
+
+	Author: Christopher Sigouin
+	Date: Oct 24, 2014
+	Purpose: Assignment 4 / Part 2 / Tip Calculator
+	Dependencies: dice.html, random.js
+
+##################################################
+
+*/
+
+/* =============== ID SELECTORS START ================ */
+
+#mainDiv { /* ID for main DIV tags. */
+    width: 850px;
+    float: left;
+    border: dashed black 2px;
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Arial";
+}
+
+#dieButton { /* ID for the button to roll the dice */
+    background-image: url('../images/dice_button.png');
+    display: block;
+    margin: 0 auto;
+    width: 345px;
+    height: 336px;
+}
+
+#results { /* ID for results DIV.  Centers the die value  */
+    text-align: center;
+}
+
+#dieValue { /* ID for the value of the die. */
+    font-size: 12em;
+}
+
+/* ID's to preload the images for the button.  Prvents initial flicker  */
+#preload-1 { background: url(../images/dice_button.png) no-repeat -9999px -9999px; }
+#preload-2 { background: url(../images/dice_button_hover.png) no-repeat -9999px -9999px; }
+
+/* =============== ID SELECTORS END ================ */
+
+/* =============== MISC SELECTORS START ================ */
+
+#dieButton:hover { /* Pseudo class to replace the image when a user hovers over the button */
+    background-image: url('../images/dice_button_hover.png');
+    width: 345px;
+    height: 336px;
+}
+
+/* =============== MISC SELECTORS START ================ */

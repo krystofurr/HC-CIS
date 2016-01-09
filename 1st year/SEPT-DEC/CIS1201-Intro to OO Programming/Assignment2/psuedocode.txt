@@ -1,0 +1,35 @@
+Calculate cost of ticket group purchases based on seat location
+
+ORCHESTRA
+MAIN FLOOR
+BALCONY
+
+VARIABLES
+--------------
+INT TYPE
+orchestraSeats
+mainFloorSeats
+balconySeats
+
+FLOAT/DOUBLE
+orchestraTotal
+mainFloorTotal
+balconyTotal
+totalSeatCost - Final Total of all seats
+
+FINAL DOUBLE/FLOAT TYPE 
+orchestraCost
+mainFloorCost
+balconyCost
+
+-START
+-INPUT: ASK HOW MANY ORCHESTRA SEATS REQUIRED
+-INPUT: ASK HOW MANY MAIN FLOOR SEATS REQUIRED
+-INPUT: ASK HOW MANY BALCONY SEATS REQUIRED
+-CALCULATE: COST OF ORCHESTRA SEATS, MAIN FLOOR SEATS AND BALCONY SEATS
+(eg. orchestraSeats * orchestraCost = totalOrchestraCost )
+-CALCULATE: TOTAL COST OF ALL SEATS TOGETHER
+(eg. Add all the totals together for final balance )
+-OUTPUT: Display each seat type cost
+-OUTPUT: Display Total cost of seats
+-STOP

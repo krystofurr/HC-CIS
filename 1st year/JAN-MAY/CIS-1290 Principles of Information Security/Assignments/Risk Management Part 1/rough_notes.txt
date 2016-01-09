@@ -1,0 +1,225 @@
+Rank the inventoried and classified data assigning a number to each CIA column 
+according to the financial impact it would have 
+and 
+how much trust (integrity) you place in the data as being reliable to the business, if compromised and not being available for a period of time. 
+
+
+Understand that any data has a financial impact to a business if Confidentiality, Integrity or Availability is compromised and each should have a number assigned. 
+
+
+
+As an aspiring information security professional, you will have a key role to play in risk management. It is the responsibility of an organization’s general management to structure the IT and information security functions to defend the organization’s information assets—
+
+information and data, hardware, software, procedures, networks, and people. 
+
+
+Confidentiality:
+
+Confidentiality is roughly equivalent to privacy. Measures undertaken to ensure confidentiality are designed to prevent sensitive information from reaching the wrong people, while making sure that the right people can in fact get it: Access must be restricted to those authorized to view the data in question.
+
+Integrity:
+
+Integrity involves maintaining the consistency, accuracy, and trustworthiness of data over its entire life cycle. Data must not be changed in transit, and steps must be taken to ensure that data cannot be altered by unauthorized people (for example, in a breach of confidentiality).
+
+Availability: 
+
+Availability is best ensured by rigorously maintaining all hardware, performing hardware repairs immediately when needed and maintaining a correctly functioning operating system environment that is free of software conflicts. 
+
+====================
+Software
+Hardware(Networks)
+People 
+Data
+Procedures
+====================
+Employees
+Nonemployees
+
+Procedures
+( eg. IT and business standard procedures
+IT and business sensitive procedures )
+
+Information
+(eg. Transmission
+Processing
+Storage )
+
+Software 
+(eg. Applications
+Operating systems
+Security components )
+
+
+System devices and
+peripherals
+(eg. Systems and peripherals
+Security devices )
+
+Networking components 
+(eg. Intranet components
+Internet or DMZ components )
+====================
+
+PART 1 - INFORMATIONAL ASSETS OF THE FOLLOWING:
+( using Table 4-1 from the text as well )
+
+People: Position name/number/ID (avoid names and stick to identifying positions,
+roles, or functions); supervisor; security clearance level; special skills
+
+Procedures: Description; intended purpose; relationship to software, hardware, and
+networking elements; storage location for reference; storage location for update
+
+Data: Classification; owner, creator, and manager; size of data structure; data structure used (sequential or relational); online or offline; location; backup procedures employed
+
+
+General Pharmacy Info Assets
+----------------------------
+	PEOPLE:
+		Authorized individuals to access local pharmacy informational
+		assets ( TELUS Assyst Rx )
+		Pharmasist
+		Technician
+		Student
+
+	PROCEDURES:
+		Procedure of accessing the pharmacy network
+		Procedure of acessing the pharmacy local network system
+	DATA:
+		Insurance database ( might be on the pharmacy network )
+		Local Databases for Pharmacy
+		Electronic documents, spreadsheets, files etc
+		Customer / Client Prescriptions
+		Inventory
+		Orders
+		Professional info Bulletins
+	SOFTWARE:
+		Software used to acess local pharmacy system
+		Software used to access pharmacy network
+		Applications for use with accounting
+		User Access ( Username / Password )
+	HARDWARE:						
+		Server
+		Terminals ( x2 )
+		Secure network
+			Sends information to HIAL ( Pharmacy Network )
+			Results obtained from HIAL
+
+
+
+Services Info Assets
+-----------------
+Consultations ( Interactions with customers )
+( Generally pharmacy consultations are PUBLIC in nature )
+	PEOPLE: 
+		Authorized personal only for consultations
+		Divulged/Shared information between entities
+	PROCEDURES:
+		Providing accurate information during consultation
+		Not providing sensitive details that are unrelated to the 				consultation.
+	DATA:
+		Documentation provided on paper
+		Consultation records database
+		
+	SOFTWARE:
+		N/A
+	HARDWARE:						
+		N/A
+
+Prescription Delivery
+	PEOPLE: 
+		Authorized personal only for delivery
+		Divulged/Shared information between entities
+	PROCEDURES:
+		Providing accurate information during delivery
+		Not providing sensitive details that are unrelated to the 				delivery
+		Process of updating deliveries completed
+	DATA:
+		Documentation provided on paper ( if applicable )
+		Customer /Patient record information
+		Customer Payment information
+		Client Prescription Delivery Database
+	SOFTWARE:
+		Software used during delivery / transaction to verify address
+		delivery location, customer information, signatures etc
+	HARDWARE:						
+		Peripherals used during delivery / transaction ( Ipad or similiar
+		device )
+		Secure network access for peripheral to pharmacy network and to
+		pharmacy store location
+
+Homecare
+	PEOPLE: 
+		Authorized personal only for homecare
+		Divulged/Shared information between entities
+	PROCEDURES:
+		Providing accurate information during homecare
+		Not providing sensitive details that are unrelated to the 				homecare work.
+		Updating sessions completed for homecare
+		Updating bill
+	DATA:
+		Documentation provided on paper
+		Electronic resources provided
+		Homecare client Database
+		
+	SOFTWARE:
+		Software used during homecare work to verify address
+		location, customer information, signatures etc
+	HARDWARE:						
+		Peripherals used during homecare work ( Ipad or similiar
+		device )
+		Secure network access for peripheral to pharmacy network and to
+		pharmacy store location
+
+Diabetic Supplies
+
+	PEOPLE: 
+		Authorized personnel only to handle supplies and processing of 				supplies
+		Client/Customer handling/access of diabetic supply information
+
+	PROCEDURES:
+		Process of updating inventory
+		Processes for Shipping / Receiving
+		Processes for Pricing
+	DATA:
+		Information used for supplies ( Name, Description, Quantity )
+		Inventory Database
+		
+	SOFTWARE:
+		Software used for updating inventory, shipping/receiving
+		and pricing
+	HARDWARE:						
+		Terminals and/or peripherals used with the software in processing
+		the supplies.
+		Secure network access from device to network or local access
+	
+PoS System
+----------------
+PoS Basic Functionality
+	PEOPLE: 
+		Authorized personnel only to handle initialization
+		Authorized personnel only to handle configuration and reporting
+		Client/Customer usage of PoS system
+	PROCEDURES:
+		Process of initiating a transaction
+		Process of customer/client usage
+		Process of backend configuration, updates, etc
+		Process of managing inventory
+		Process of Accounting
+		Process of reports produced
+	DATA:
+		PoS Database
+		Client Payment informaton
+		Pricing information
+		Sales Trends
+		Inventory
+		
+		
+	SOFTWARE:
+		Applications used to interact with PoS system
+		Applications used for backend procedures with PoS system
+	HARDWARE:						
+		2 Terminals and/or peripherals used with the software during 				interaction with the PoS system
+		Secure network access from device to network or local access
+		Server usage
+
+

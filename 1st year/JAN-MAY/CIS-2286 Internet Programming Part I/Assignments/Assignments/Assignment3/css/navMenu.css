@@ -1,0 +1,42 @@
+/*
+
+	################## CIS-2286 Internet Programming Part I PWC ##################
+     Author: Christopher Sigouin
+     Date: January 29, 2015
+     Purpose: Assignment 3
+     Dependencies: 
+
+     REFERENCES:
+
+    CSS CODE FOR NAV MENU: http://css.maxdesign.com.au/listutorial/horizontal09.htm 
+
+ */
+
+.navMenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.navMenu ul li { display: inline; }
+
+.navMenu ul li a {
+	text-decoration: none;
+	padding: .2em;
+	margin-left: .2em;
+	margin-right: .2em;
+	color: #fff;
+	background-color: #FF6600;
+	font-size: .9em;
+	text-shadow: none;
+}
+
+.navMenu ul li a:hover {
+	color: #fff;
+	background-color: #FFA366;
+}
+
+.navMenu ul li a.current {
+	background-color: #993D00;	
+}

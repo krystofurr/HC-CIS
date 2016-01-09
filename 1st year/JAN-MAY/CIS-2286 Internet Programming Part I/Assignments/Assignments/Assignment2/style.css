@@ -1,0 +1,64 @@
+/*
+
+	################## CIS-2286 Internet Programming Part I PWC ##################
+     Author: Christopher Sigouin
+     Date: January 29, 2015
+     Purpose: Assignment 2
+     Dependencies:  
+
+ */
+
+* { /* Remove all borders from everything */
+	border: 0;
+}
+
+input { /* Styling for text boxes */
+	background-color: grey;
+}
+
+input[type="submit"] { /* Submit button styling */
+	display: block;
+	margin-top: 10px;
+	background-color: yellow;
+}
+
+input:focus { /* Change the text box colors when focused */
+	background-color: green;
+	color: white;
+}
+
+label { /* Affects all labels on taxReturn.php */
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 50%;
+}
+
+#header { /* Banner image background */
+	background: url('header_bg.png') no-repeat;
+	width: 728px;
+	height: 90px;
+	color: yellow;
+	text-align: center;
+	text-shadow: 2px 2px #000;
+	margin: 0 auto;
+}
+
+.container { /* Container / Wrapper */
+	padding-top: 5%;
+	width: 35%;
+	margin: 0 auto;
+}
+
+.heading { /* Headings in processTaxReturn.php file */
+	font-weight: bolder;
+
+}
+
+.center { /* Basic center class selector */
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+##################################################
+
+	Author: Christopher Sigouin
+	Date: October 23, 2014
+	Purpose: Assignment 4 / Part 1 / Tip Calculator
+	Dependencies: myStyles_Part1.css, myJsLibrary.js
+
+
+    REFERENCES FOR IMAGES/TEXT: None
+
+##################################################
+-->
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Assignment 4 / Part 1 / My Tip Calculator</title>
+        <link rel="stylesheet" type="text/css" href="css/myStyles_Part1.css">
+        <script src="js/myJsLibrary.js"></script>
+    </head>
+    <body>
+        <!-- Main DIV START -->
+        <div id="mainDiv">
+            <h2 class="center">Tip Calculator</h2>
+            <form>
+                    <label for="totalBill">
+                        Enter your Total Bill Amount $ ( eg. 20.56 )
+                        <input type="text" name="totalBillAmount" id="totalBill" class="center">
+                    </label>
+                    <label for="tipPercentage">
+                        Enter your Tip Percentage % ( eg. 15 )
+                        <input type="text" name="tipPercentageAmount" id="tipPercentage" class="center">
+                    </label>
+                    <input type="button" class="center" id="calculateButton" onclick="calculateTip()" value="Calculate Total with Tip">
+            </form>
+            <!-- RESULTS DIV START -->
+            <div id="results">===== WELCOME =====</div>
+            <!-- RESULTS DIV END -->
+        </div>
+        <!-- Main DIV END -->
+     </body>
+</html>

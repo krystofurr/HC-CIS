@@ -1,0 +1,33 @@
+[PRANK SLIDE] -
+
+-Has someone ever played a prank on someone else's computer before?  Maybe changed their display properties to something crazy or even go as far as changing something in the Windows Registry.  Maybe you've even written a script or a piece of software that caused your targets computer to run out of control.  I myself used to create scripts with some software to kick users out of a chat area and take control of the channel basically. I had no indention of making it permanent.  I just wanted to see if I could do it.
+
+-Today the topic I'm going to speak about used to be based on these things, and for the very same reasons.  Now in the 21st century they have evolved into sophisticated criminal entities.  They are known mostly for what they can do and not how they can do it. 
+
+[TITLE SLIDE] - 
+
+-My name is Christoper Sigouin and today I would like to bring your attention to a very important subject in the computer science industry.  MALWARE!  
+
+[MALWARE TYPES SLIDE]
+You have likely heard this term before. It's a generic term for more specific branches like trojans, worms, spyware and the list goes on.  Today's form of malware has specific purposes in mind.  Cyber terrorism, data theft, and botnetting are a few among them.
+
+[SPECIFIC EXAMPLES]
+Some fairly recent examples of malware:
+	Stuxnet: A worm that was designed to infect logic controllers that controlled machinery for factory assembly lines, amusement rides and centrifuges for seperating nuclear material.  It actually caused physical damage to power plants in Iran.
+	Zeus Keystroke Logger: Was a keylogger famous for harvesting nearly 100 million dollars from US accounts by stealing sensitive banking information and sending it back to it's controllers.  It was also able to bypass many anti-virus systems.
+	Shellshock or Bashdoor: Very recent bug found in the UNIX Bash Shell.  The bug itself was not malware but was exploited using malware hours after it was found.  Millions of attacks and scans were reported by security groups.      
+
+[MALWARE CODE SLIDE]
+-How does one develop the program that leads to these sort of things you might ask yourself?  It's not a common thing to take a course that teaches you how to write software that will infect multiple computer systems and control them remotely.  The people developing it have likely learned from another developer or on their own, for their own purposes.  This means that graduates from computer science courses are finishing their education without knowing the malicious logic that could one day infect their own software creations.  Strictly Java speaking, they might as well make their privates public!
+
+[TEACHING MALWARE SLIDE]
+-An effective method of dealing with malware is to teach students how to design and implement malware practices.  How else will we know how to combat its growing threat?  We have theories on data sorting, theories on algorithms but no definite theory on malware itself.  I for one do not want to remain on the receiving end sitting behind my antivirus waiting to be rescued.  Some of you could probably relate that even dealing with the antivirus software is worse than being infected. 
+
+[BIOLOGY ANALOGY SLIDE]
+
+-The idea of implementing such a curriculum still drives fear and dread into peoples hearts. Similiar feelings were likely felt in the past when it was forbidden to dissect human remains .  Once it was accepted and allowed medicine advanced in leaps and bounds. 
+
+[CONCLUSION SLIDE]
+
+We are future computer science professionals.  Isn't it our responsibility as programmers and human beings to better ourselves and our environments?  Although we can't physical see them, there are wars raging on in cyberspace right now.  And the walls we have encased ourselves in are falling apart.  Food for thought.  Thank you
+

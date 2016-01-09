@@ -1,0 +1,18 @@
+Michael:
+
+My report/presentation was on robotics and their effect on the economy. The main point was that as the fields of robotics and automation advance the more jobs will be replaced by robots, eventually leading to mass unemployment.
+
+Ashley:
+
+My report/presentation was on technology's influence on the methods memes use to spread - the concept being that technology allows things to spread farther and faster, but with the drawback that it doesn't usually last as long.   
+
+Evan:
+
+The Importance of Design on End User Privacy.
+I examined the different common approaches to privacy in modern computer science and argued for including these approaches into the design of systems or services. I emphasized that doing so will fundamentally change the end user's privacy.
+
+Chris:
+
+Teaching Malware to Better Defend Against it
+( The theory on how including malware teaching in computer science courses will help us against the growing malware threat we face everyday by programming more defensive applications )
+

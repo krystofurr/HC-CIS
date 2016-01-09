@@ -1,0 +1,253 @@
+29.  Using the output shown in Figure P7.29 as your guide, generate a list of customer purchases, including the subtotals for each of the invoice line numbers. (Hint: Modify the query format used to produce the list of customer purchases in Problem 28, delete the INV_DATE column, and add the derived attribute LINE_UNITS * LINE_PRICE to calculate the subtotals.)
+
+
+SELECT INVOICE.CUS_CODE, INVOICE.INV_NUMBER, PRODUCT.P_DESCRIPT, LINE.LINE_UNITS AS 'Units Bought', PRODUCT.P_PRICE AS 'Unit Price', ROUND( LINE.LINE_UNITS * LINE.LINE_PRICE, 2 ) AS 'Sub Total'
+FROM INVOICE, LINE, PRODUCT
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+AND PRODUCT.P_CODE = LINE.P_CODE
+ORDER BY CUS_CODE, INV_NUMBER, P_DESCRIPT, 'Units Bought', 'Unit Price', SubTotal
+
+ 
+30.  Modify the query used in Problem 29 to produce the summary shown in Figure P7.30.
+ 
+CUS_CODE ( CUSTOMER TABLE )
+CUS_BALANCE ( CUSTOMER TABLE )
+Total Purchases ( Sum of each Subtotal for each invoice per cus_code )
+
+SELECT INVOICE.CUS_CODE, CUS_BALANCE, SUM(ROUND( LINE.LINE_UNITS * LINE.LINE_PRICE, 2 )) AS 'Total Purchases'
+FROM INVOICE, LINE, PRODUCT, CUSTOMER
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+AND PRODUCT.P_CODE = LINE.P_CODE
+AND CUSTOMER.CUS_CODE = INVOICE.CUS_CODE
+GROUP BY INVOICE.CUS_CODE
+ORDER BY CUS_CODE
+
+
+31.  Modify the query in Problem 30 to include the number of individual product purchases made by each customer. (In other words, if the customer’s invoice is based on three products, one per LINE_NUMBER, you count three product purchases. Note that in the original invoice data, customer 10011 generated three invoices, which contained a total of six lines, each representing a product purchase.) Your output values must match those shown in Figure P7.31.
+ 
+CUS_CODE, CUS_BALANCE, 'Total Purchases', 'Number of Purchases'
+
+SELECT INVOICE.CUS_CODE, CUS_BALANCE, SUM(ROUND( LINE.LINE_UNITS * LINE.LINE_PRICE, 2 )) AS 'Total Purchases', COUNT(INVOICE.INV_NUMBER) AS 'Number of Purchases'
+FROM INVOICE, LINE, PRODUCT, CUSTOMER
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+AND PRODUCT.P_CODE = LINE.P_CODE
+AND CUSTOMER.CUS_CODE = INVOICE.CUS_CODE
+GROUP BY INVOICE.CUS_CODE
+ORDER BY CUS_CODE
+
+ 
+32.  Use a query to compute the average purchase amount per product made by each customer. (Hint: Use the results of Problem 31 as the basis for this query.) Your output values must match those shown in Figure P7.32.   Note that the average purchase amount is equal to the total purchases divided by the number of purchases per customer.
+ 
+SELECT INVOICE.CUS_CODE, CUS_BALANCE, SUM(ROUND( LINE.LINE_UNITS * LINE.LINE_PRICE, 2 )) AS 'Total Purchases', COUNT(INVOICE.INV_NUMBER) AS 'Number of Purchases',
+AVG(COUNT(INVOICE.INV_NUMBER) * SUM(ROUND( LINE.LINE_UNITS * LINE.LINE_PRICE, 2 ))) AS 'Average Purchase Amount'
+FROM INVOICE, LINE, PRODUCT, CUSTOMER
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+AND PRODUCT.P_CODE = LINE.P_CODE
+AND CUSTOMER.CUS_CODE = INVOICE.CUS_CODE
+GROUP BY INVOICE.CUS_CODE
+ORDER BY CUS_CODE
+
+
+ 
+33.  Create a query to produce the total purchase per invoice, generating the results shown in Figure P7.33. The invoice total is the sum of the product purchases in the LINE that corresponds to the INVOICE.
+
+	INV_NUMBER, Invoice Total
+
+	INVOICE ( INV_NUMBER )
+	LINE ( INV_NUMBER, LINE_PRICE, LINE_UNITS, LINE_NUMBER
+
+	Sum of all totals per Invoice to get the full total
+
+SELECT INV_NUMBER, SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'Invoice Total'
+FROM LINE
+GROUP BY INV_NUMBER
+ORDER BY INV_NUMBER
+ 
+34.  Use a query to show the invoices and invoice totals in Figure P7.34. (Hint: Group by the CUS_CODE.)
+
+TABLES: INVOICE, LINE
+
+FIELDS : INVOICE - INV_NUMBER, CUS_CODE, 
+		LINE - INV_NUMBER, LINE_UNITS, LINE_PRICE
+
+FIELDS REQUIRED IN OUTPUT: CUS_CODE, INV_NUMBER, Invoice Total
+
+* Same as 33 . Just add CUS_CODE to grouping
+
+SELECT CUS_CODE, INVOICE.INV_NUMBER, SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'Invoice Total'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+GROUP BY INV_NUMBER, CUS_CODE
+ORDER BY CUS_CODE, INV_NUMBER
+
+
+35.  Write a query to produce the number of invoices and the total purchase amounts by customer, using the output shown in Figure P7.35 as your guide. (Compare this summary to the results shown in Problem 34.)
+
+
+
+CUS_CODE, Number of Invoices, Total Customer Purchases
+
+TABLES REQUIRED: INVOICE, LINE
+FIELDS REQUIRED: INVOICE - 	INV_NUMBER, CUS_CODE
+				     LINE - 		INV_NUMBER, (LINE_UNITS * LINE_PRICE)		
+ 
+SELECT CUS_CODE, COUNT(DISTINCT INVOICE.INV_NUMBER) AS 'Number of Invoices', SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'Total Customer Purchases'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+GROUP BY CUS_CODE
+ORDER BY CUS_CODE
+
+36.  Using the query results in Problem 35 as your basis, write a query to generate the total number of invoices, the invoice total for all of the invoices, the smallest invoice amount, the largest invoice amount, and the average of all the invoices. (Hint: Check the figure output in Problem 35.) Your output must match Figure P7.36.
+
+DISPLAY FIELDS: Total Invoices, Total Sales, Minimum Sale, Largest Sale, Average Sale
+
+TABLES REQUIRED: LINE
+
+
+SELECT SUM(Invoices) AS 'Sum', 
+ROUND(SUM(Total),2) AS 'Total Sales', 
+ROUND(MIN(Total),2) AS 'Minimum', 
+ROUND(MAX(Total),2) AS 'Maximum', 
+ROUND(AVG(Total),2) AS 'Average'
+FROM
+(SELECT CUS_CODE, COUNT(DISTINCT INVOICE.INV_NUMBER) AS 'Invoices', 
+SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'Total'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+GROUP BY CUS_CODE
+ORDER BY CUS_CODE) AS T1
+
+Smallest Invoice Amount, Largest Invoice Amount, Average Invoice Amount
+* need Totals for each Invoice to find the Min, Max and Average
+
+
+
+37.  List the balances of customers who have made purchases during the current invoice cycle—that is, for the customers who appear in the INVOICE table. The results of this query are shown in Figure P7.37.
+
+TABLES REQUIRED: INVOICE, CUSTOMER
+
+SELECT INVOICE.CUS_CODE, INVOICE.INV_NUMBER, CUS_BALANCE
+FROM INVOICE, CUSTOMER
+WHERE INVOICE.CUS_CODE = CUSTOMER.CUS_CODE
+GROUP BY CUS_CODE
+ORDER BY CUS_CODE
+ 
+38.  Using the results of the query created in Problem 37, provide a summary of customer balance characteristics, as shown in Figure P7.38.
+
+SELECT ROUND(MIN(Balance),2) AS 'Minimum Balance',
+ROUND(MAX(Balance),2) AS 'Maximum Balance', 
+ROUND(AVG(Balance),2) AS 'Average Balance'
+FROM   
+(SELECT INVOICE.CUS_CODE, CUS_BALANCE AS 'Balance'
+FROM INVOICE, CUSTOMER
+WHERE INVOICE.CUS_CODE = CUSTOMER.CUS_CODE
+GROUP BY CUS_CODE
+ORDER BY CUS_CODE) AS T1
+
+39.  Create a query to find the balance characteristics for all customers, including the total of the outstanding
+
+SELECT ROUND(SUM(CUS_BALANCE),2) AS 'Total Balances', ROUND(MIN(CUS_BALANCE),2) AS 'Minimum Balance', 
+ROUND(MAX(CUS_BALANCE),2) AS 'Maximum Balance',
+ROUND(AVG(CUS_BALANCE),2) AS 'Average Balance'
+FROM CUSTOMER
+ORDER BY CUS_CODE
+
+40.  Find the listing of customers who did not make purchases during the invoicing period. Your output must match the output shown in Figure P7.40.
+ 
+SELECT CUS_CODE, CUS_BALANCE
+FROM CUSTOMER
+WHERE NOT CUS_CODE IN (SELECT CUS_CODE FROM INVOICE)
+ORDER BY CUS_CODE
+
+41.  Find the customer balance summary for all customers who have not made purchases during the current invoicing period. The results are shown in Figure P7.41.
+
+SELECT ROUND(SUM(CUS_BALANCE),2) AS 'Total Balance', 
+ROUND(MIN(CUS_BALANCE),2) AS 'Minimum Balance',
+ROUND(MAX(CUS_BALANCE),2) AS 'Maximum Balance',
+ROUND(AVG(CUS_BALANCE),2) AS 'Average Balance'
+FROM CUSTOMER
+WHERE NOT CUS_CODE IN (SELECT CUS_CODE FROM INVOICE)
+ORDER BY CUS_CODE
+
+ 
+42.  Create a query that summarizes the value of products currently in inventory. Note that the value of each product is a result of multiplying the units currently in inventory by the unit price. Use the ORDER BY clause to match the order shown in Figure P7.42.
+
+SELECT P_DESCRIPT, P_QOH, P_PRICE, ROUND(P_QOH * P_PRICE,2) AS 'SubTotal'
+FROM PRODUCT
+
+43.  Using the results of the query created in Problem 42, find the total value of the product inventory. The results are shown in Figure P7.43.
+ 
+
+
+
+
+
+
+ WORKS
+---
+SELECT MIN(T1) 
+FROM
+(SELECT CUS_CODE, SUM(LINE_UNITS * LINE_PRICE) AS 'TOTAL'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+GROUP BY CUS_CODE) AS T1
+
+SELECT CUS_CODE, SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'TOTAL'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+GROUP BY CUS_CODE
+
+
+
+SELECT SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'Totals'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+GROUP BY CUS_CODE
+HAVING MIN(Totals) > 1
+
+
+
+
+SELECT COUNT(Totals) AS 'Count', SUM(Totals) AS 'Sum', MIN(Totals) AS 'Min', MAX(Totals) AS 'Max', AVG(Totals) AS 'Average'
+FROM
+(SELECT SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'Totals'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+GROUP BY CUS_CODE) AS TOTAL
+
+
+
+INVOICE  CUS CODE   SUM(LINE PRICE * LINE UNIT)
+
+SELECT DISTINCT INVOICE.INV_NUMBER, CUS_CODE, SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'Total Per Invoice'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+
+
+
+SELECT COUNT(INV_NUMBER) AS 'Total Invoices', SUM(ROUND('Total')) AS 'Total Per Customer'
+FROM
+(SELECT INVOICE.INV_NUMBER, CUS_CODE, SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'Total'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+GROUP BY INV_NUMBER) AS INVOICE_TOTALS
+
+
+
+
+, SUM(Total Customer Purchases) AS 'Total Sales', 'Minimum Sales', 'Largest Sales', 'Average Sale
+
+
+
+SELECT SUM(Invoices) AS 'Total Invoices', 
+SUM(ROUND(Total,2) AS 'Total Sales', 
+MIN(ROUND(Total,2) AS 'Minimum Sale', 
+MAX(ROUND(Total,2) AS 'Maximum Sale', 
+AVG(ROUND(Total,2) AS 'Average Sale' 
+FROM
+(SELECT CUS_CODE, COUNT(DISTINCT INVOICE.INV_NUMBER) AS 'Invoices', SUM(ROUND(LINE_UNITS * LINE_PRICE,2)) AS 'Total'
+FROM INVOICE, LINE
+WHERE INVOICE.INV_NUMBER = LINE.INV_NUMBER
+GROUP BY CUS_CODE
+ORDER BY CUS_CODE) AS T1
+

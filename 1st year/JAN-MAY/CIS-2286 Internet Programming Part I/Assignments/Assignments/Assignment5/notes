@@ -1,0 +1,45 @@
+COMPLETE:
+
+-provide a link back to the email form and halt processing (exit)
+-provide a message to tell the user that their message is acceptable and will be sent to the appropriate department.
+-If it is, display error text that tells the user how many characters they had (beyond the limit) and give them a link to  go back and edit their message.
+
+
+Review: Full, Anonymous: No
+Your boss needs you to build a prototype of a new email contact page for the company.
+
+This solution will require two pages. Here are the details:
+
+The input form will be a PHP page called emailForm.php . It will contain:
+
+	/5 A background color (not white) - as well as some type of visually appealing website header (png, gif, jpeg) with the name of the company. This theme should be applied to both pages.
+
+	/2 Today's date formatted like (February 20, 2015)
+
+	/3 A text box for email address with appropriate form label.
+
+	/5 A text area <textarea> for email message labelled "message". It should also inform the user that they have to keep their message below 500 characters.
+
+	A submit button labeled "Send".
+
+	/5 Other CSS requirements: Please place all body content in div with an id of container. Inside this container, place header content in a div with an id of headerContent. The form content should also be inside the container div (but not in the headerContent div) in a div with an id of emailForm. Please use the Verdana font, with a size of 24px.
+
+When you click "Send" the form will "POST" to the script "processEmail.php". This file has the following requirements:
+
+	/5 Remove any extra leading or trailing whitespace from the email and message values (trim), as well make sure they are not empty. 
+
+	/10 Use a regular expression to ensure that the email address is valid. Think about what a valid email address consists of. If it not valid, echo to the user that it is invalid, provide a link back to the email form and halt processing (exit). If it is valid - provide a message to tell the user that their message is acceptable and will be sent to the appropriate department. See example in textbook on page 129.  Note: Given eregi has been deprecated, you are welcome to use preg_match instead, though the syntax for the regular expression will be slightly different.  If you are getting a warning for using eregi, you can ask PHP to ignore deprecated warnings with the following statement: error_reporting(E_ALL ^ E_DEPRECATED); NOTE - Using html5 input box validation is not suffice for this task. You must do this validation in PHP. 
+
+	/10 Check to ensure that the message is not too long. If it is, display error text that tells the user how many characters they had (beyond the limit) and give them a link to go back and edit their message. NOTE - Using html5 input box validation is not suffice for this task. You must do this in PHP. 
+
+	/5 Header comments, code formatting and alignment 
+
+Note that we are not going to actually send an email to anyone as we don't have an SMTP server set up in our php.ini. 
+
+As well, please ensure that you complete this assignment on your own. 
+
+Total: /50
+
+ 
+
+Submit: Zip and submit the following files emailForm.php, processEmail.php

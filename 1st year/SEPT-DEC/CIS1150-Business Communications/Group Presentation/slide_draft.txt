@@ -1,0 +1,74 @@
+
+Five assignments are part of the Spam and Spyware course taught by Professor Aycock.  One of which is an ethics assignment that is completed prior to the four that are programming based. 
+  
+Assignment 1: Ethics Assignment
+A written assignment completed by the student on ethics after the ethics portion of the course is taken.
+
+Assignment 2: spyware/offensive. 
+Writing spyware that installed a startup hook, changed the browser start page, and performed keylogging. Keylogging was directed at the capture of the username and password used in the web browser to access a ?ctitious bank’s web site.
+
+Assignment 3: spyware/defensive. 
+Students exchanged their spyware from the previous assignment. They then developed anti-spyware software that accurately detected, identi?ed, and removed all spyware samples.
+  
+Assignment 4: spam/offensive. 
+Writing bulk mailing software that delivered messages directly to an SMTP server, optionally routing through an open proxy. Because laboratory constraints precluded us from sending a message to multiple recipients in any meaningful way, students instead sent multiple messages to one recipient. Spam and ham corpora (a subset of SpamAssassin’s public corpora [11]) were supplied for the students to transmit.
+
+Assignment 5: spam/defensive. 
+Once the email was delivered to some lucky recipient, students developed a spam ?lter that sorted the recipient’s mailbox into spam and ham messages as accurately as possible.
+
+
+
+
+
+
+
+
+POWERPOINT PRESENTATION:
+
+PEOPLE WHO ARE TEACHING MALWARE
+
+? Intro - 1 SLIDE
+
+? George Ledin - 1 SLIDE
+
+? John Sullins - 1 SLIDE
+
+? John Aycock - 1 SLIDE
+
+IMPORTANCE ON ETHICS IN EDUCATION ON MALWARE
+
+? Intro - 1 SLIDE
+
+? Reasons why - 1 SLIDE
+
+? Example Methods - 1 SLIDE ( 4 CLICKS ) 
+
+EXAMPLE COURSE OUTLINE
+
+? Intro - 1 SLIDE
+
+? George Ledin Course - NOT USING DUE TO LACK OF INFORMATION
+
+? John Aycock Course - 1 SLIDE FOR COURSE INFO
+                       1 SLIDE FOR 10 DIFFERENT SECTIONS
+                       1 SLIDE FOR ASSIGNMENTS
+
+
+ONE ETHICS ASSIGNMENT AND FIVE PROGRAMMING ASSIGNMENTS IN A SECURE LABRATORY
+
+PICS REFERENCES
+
+Light Bulb
+http://wealthartisan.com/wp-content/uploads/2011/07/idea-bulb-light-lightbulb-people-around-team.jpg
+
+BE PREPARED
+http://mountaintopchristianfellowship.org/wp-content/uploads/2014/09/Be-Prepared.jpg
+
+ETHICS_INTRO
+http://chenected.aiche.org/wp-content/uploads/2013/12/shutterstock_145461094-300x300.jpg
+
+COURSE INTRO
+http://www.studyinbelarus.ws/wp-content/uploads/2011/06/contEDU2.jpg
+
+u of c logo
+http://drsaraheaton.files.wordpress.com/2012/04/u-of-c-logo-jpg.jpg

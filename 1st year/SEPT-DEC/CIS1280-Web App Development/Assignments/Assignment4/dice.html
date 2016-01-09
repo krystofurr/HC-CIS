@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+##################################################
+
+	Author: Christopher Sigouin
+	Date: October 24, 2014
+	Purpose: Assignment 4 / Part 2 / Tip Calculator
+	Dependencies: myStyles_Part2.css, random.js
+
+
+    REFERENCES FOR IMAGES/TEXT:
+
+    dice_button.png = http://allaboutfunandgames.com/wp-content/uploads/2012/12/One-Dice.png
+
+##################################################
+-->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Assignment 4 / Part 2 / Dice Roller</title>
+    <link rel="stylesheet" type="text/css" href="css/myStyles_Part2.css">
+    <script src="js/random.js"></script>
+</head>
+<body>
+    <!-- Preload the images for the button so they do not flicker on first try -->
+    <div id="preload-1"></div>
+    <div id="preload-2"></div>
+
+    <!-- Main DIV START -->
+    <div id="mainDiv">
+        <button id="dieButton" onclick="rollDie()"></button>
+        <div id="results"></div>
+        </div><div id="percentageValue">
+    </div>
+    <!-- Main DIV END -->
+</body>
+</html>

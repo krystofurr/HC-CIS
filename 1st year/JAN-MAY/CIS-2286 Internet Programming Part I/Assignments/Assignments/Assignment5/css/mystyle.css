@@ -1,0 +1,124 @@
+/* 
+	################## CIS-2286 Internet Programming Part I PWC ##################
+     Author: Christopher Sigouin
+     Date: March 3, 2015
+     Purpose: Assignment 5
+     Dependencies:  
+
+     IMAGE REFERENCES:
+     	EMAIL IMAGE - http://tomgow.com/wp/wp-content/uploads/2011/10/bigstock-Email-icon-14464973.png
+     	CLIPBOARD IMAGE - https://home.anticsdms.com/html/img/foot_icon_form.png
+*/
+
+body {
+	background-color: #993333;
+}
+
+#headerContent { /* Banner image background */
+	background: url('../img/banner.png') no-repeat;
+	width: 763px;
+	height: 125px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px #000;
+	margin-bottom: 10px;
+}
+
+#footer {
+	width: 25%;
+	background-color: #8D1919;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.warning {
+	margin-top: 10px;
+	font-size: 11px;
+	color: yellow;
+	font-weight: bold;
+}
+
+.pass {
+	color: green;
+	font-size: 20px;
+}
+
+.fail {
+	color: red;
+	font-size: 20px;
+}
+
+/*
+This is because each widget has their own rules for border, padding and margin. 
+So if you want to give the same size to several different widgets, 
+you have to use the box-sizing property:
+ */
+
+
+textarea, input { /* Set both to the same width for alignment */
+  width : 250px;
+  height: 35px; /* Compensate for the 24px font size */
+  margin: 0;
+  border: none;
+}
+
+#emailForm label { /* Labels float left */
+	width: 150px;
+	float: left;
+	text-align: right;
+	margin-right: 5%;
+
+}
+
+#emailForm label[for="message"] {
+	margin-top: 35px;
+}
+
+#emailForm textarea { /* Text Area Height */
+	height: 200px;
+	margin-top: 35px;
+}
+
+#emailForm input, textarea {
+	display: block;
+}
+
+#emailForm {
+	font-family: Verdana;
+	width: 35%;
+	font-size: 24px;
+
+}
+
+#emailForm input[type='submit'] { 
+	width: 30%;				
+	margin-top: 20px; 		
+}
+
+#emailForm input:focus, #emailForm textarea:focus {
+	background-color: #EBCCCC;
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+

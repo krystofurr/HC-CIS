@@ -1,0 +1,109 @@
+/*
+
+	################## CIS-2286 Internet Programming Part I PWC ##################
+     Author: Christopher Sigouin
+     Date: February 7, 2015
+     Purpose: Assignment 3
+     Dependencies:
+
+ */
+
+body {
+	background-color: #FFC299;
+}
+* { /* Remove all borders from everything */
+	border: 0;
+}
+
+
+#container { /* Banner image background */
+	background: url('../img/banner.png') no-repeat;
+	width: 728px;
+	height: 90px;
+	color: blue;
+	text-align: center;
+	text-shadow: 2px 2px #000;
+	margin-bottom: 10px;
+}
+
+.heading { /* Headings in processTaxReturn.php file */
+	font-weight: bolder;
+
+}
+
+.orderResults { /* Applied to DIV for all .php pages except orderVegetables.php */
+	text-align: center;
+	width: 50%;
+	background-color: #fff;
+}
+
+.center { /* Basic center class selector */
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.formLayout { /* Main class for the orderVegetables.php form */
+	background-color: #fff;
+    border: solid 1px #a1a1a1;
+    padding: 10px;
+    width: 75%;
+}
+
+.formLayout label, .formLayout input {
+    display: block;
+    width: 40%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+input[name*="veggie"] { /* Specific for input elements */
+	width: 5%;
+}
+
+.formLayout input { /* Specific for any inputs under the .formLayout class */
+	background-color: #999999;
+}
+
+.formLayout label {
+    text-align: right;
+    padding-right: 30px;
+    clear:left;
+}
+
+.formLayout input[type="submit"] { /* Submit button styling */
+	width: 20%;
+	background-color: #FF6600;
+	float: right;
+	margin-top: 10px;
+	color: #fff;
+}
+
+input:focus { /* Change the text box colors when focused */
+	background-color: green;
+	color: white;
+}
+
+.resetFormLayout input { /* Specific for any inputs under the .resetFormLayout class */
+	display: block;
+}
+
+.orderTableView {
+	margin-top: 5%;
+}
+
+.orderTableView td { /* Table display for processVeggies.php and viewOrders.php */
+	text-align: left;
+}
+
+.orderTableView td.orderLabel { /* For table use on viewOrders.php */
+	background-color: #FFC299;
+	text-align: left;
+}
+
+.orderTableView td.orderHeading { /* Table styles for processVeggies.php and viewOrders.php */
+	background-color: #FF6600;
+	text-align: center;
+}
+
+
+

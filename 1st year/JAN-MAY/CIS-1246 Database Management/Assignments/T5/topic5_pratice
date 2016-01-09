@@ -1,0 +1,21 @@
+Create Database ConstrucCo;
+Use ConstrucCo;
+
+CREATE TABLE EMPLOYEE (
+  EMP_NUM    	INT	  	NOT NULL,
+  EMP_LNAME  	VARCHAR(20)  	NULL, 
+  EMP_FNAME  	VARCHAR(20)  	NULL,
+  EMP_INITIAL 	CHAR(1)     	NULL,
+  EMP_HIREDATE 	DATE		NULL,
+  JOB_CODE   	CHAR(3)   	NULL,
+  EMP_YEARS 	INT		NULL
+);
+
+INSERT INTO EMPLOYEE VALUES('101','News','John','G','08-Nov-00','502','12');
+INSERT INTO EMPLOYEE VALUES('102','Senior','Davis','H','12-Jul-89','501','23');
+INSERT INTO EMPLOYEE VALUES('103','Arbough','June','E','01-Dec-86','503','16');
+INSERT INTO EMPLOYEE VALUES('104','Ramores','Anne','K','15-Nov-97','502','25');
+INSERT INTO EMPLOYEE VALUES('105','Johnson','Alice','K','01-Feb-93','502','19');
+INSERT INTO EMPLOYEE VALUES('106','Smithfield','William','','22-Jun-04','500','8');
+
+

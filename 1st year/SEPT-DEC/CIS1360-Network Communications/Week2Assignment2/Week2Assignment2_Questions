@@ -1,0 +1,68 @@
+SMTP -> TCP -> IP -> ANY OF THESE( ETHERNET / 802.11 WIRELESS LAN / FRAME RELAY / ATM )
+
+================================================================================
+
+TFTP -> UDP -> IP -> ANY OF THESE( ETHERNET / 802.11 WIRELESS LAN / FRAME RELAY / ATM )
+
+================================================================================
+
+1. IPv6 ADDRESS -> fe80::fdcb:d463:dda7:9d0d%11
+2. IPv4 ADDRESS -> 10.0.2.15
+3. SUBNET MASK -> 255.255.255.0
+4. DEFAULT GATEWAY -> 10.0.2.2
+
+============================== CLI ( IPCONFIG ) ================================
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+C:\Users\krys>ipconfig
+Windows IP Configuration
+
+Ethernet adapter Local Area Connection:
+Connection-specific DNS Suffix  . :
+Link-local IPv6 Address . . . . . : fe80::fdcb:d463:dda7:9d0d%11
+IPv4 Address. . . . . . . . . . . : 10.0.2.15
+Subnet Mask . . . . . . . . . . . : 255.255.255.0
+Default Gateway . . . . . . . . . : 10.0.2.2
+Tunnel adapter isatap.{0D3E4665-41FC-4A3F-8693-EEB24A70A080}:
+Media State . . . . . . . . . . . : Media disconnected
+Connection-specific DNS Suffix  . :
+Tunnel adapter Local Area Connection* 11:
+Connection-specific DNS Suffix  . :
+IPv6 Address. . . . . . . . . . . : 2001:0:5ef5:79fb:1c48:2939:714e:2026
+Link-local IPv6 Address . . . . . : fe80::1c48:2939:714e:2026%13
+Default Gateway . . . . . . . . . : ::
+
+================================================================================
+
+Each option is typed after " ipconfig ".  ( eg. ipconfig /flushdns )
+
+/all                  Display full configuration information.
+/release              Release the IPv4 address for the specified adapter.
+/release6             Release the IPv6 address for the specified adapter.
+/renew                Renew the IPv4 address for the specified adapter.
+/flushdns             Purges the DNS Resolver cache.
+/registerdns          Refreshes all DHCP leases and re-registers DNS names
+/registerdns          Refreshes all DHCP leases and re-registers DNS names
+
+================================================================================
+
+List at least 6 additional pieces of information that you now have available to you for your network adapter card. (3 marks)
+
+	Description . . . . . . . . . . . : Intel(R) PRO/1000 MT Desktop Adapter
+	Physical Address. . . . . . . . . : 08-00-27-3B-BA-F5
+	DHCP Enabled. . . . . . . . . . . : Yes
+	Lease Obtained. . . . . . . . . . : Thursday, September 18, 2014 8:52:28 PM
+	Lease Expires . . . . . . . . . . : Friday, September 19, 2014 8:52:29 PM
+	DNS Servers . . . . . . . . . . . : 10.0.2.3
+ 
+
+What is the physical address of your network adapter? List it here. ( 1 mark )
+
+	PHYSICAL ADDRESS: 08-00-27-3B-BA-F5
+
+ 
+
+Why is it important to know what your physical address is?  Write out your answer here. ( 1 mark )
+
+Some applications or devices may need the physical address in order to be configured correctly. 
+This is applied when the device is connected directly to the NIC of the PC ( eg. some VOIP phones / adapters ).  Also it's good to know for troubleshooting purposes.  For example if you were to log into a router remotely you can use ARP to locate any MAC   addresses that are physically connected to it. In this case if you were not able to see the MAC address it would reveal a network issue with the NIC card of the PC.

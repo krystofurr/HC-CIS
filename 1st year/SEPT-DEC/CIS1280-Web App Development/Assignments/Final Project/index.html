@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--
+
+	Project Name: PORTFOLIO SUBMISSION
+	Filename: index.html	
+	
+	Author: Christopher Sigouin
+	Date: 12/13/2014
+	Purpose: PORTFOLIO SUBMISSION
+	Dependencies:
+	    bootstrap.min.css, font-awesome.min.css, customerCSS.css, bootstrapValidator.css,
+	    jquery-1.11.1.js, bootstrap.js, customJS.js, bootstrapValidator.js,
+	    index.html, webProjects.html, javaProjects.html, blogPage.html, about.html,
+	    quotes.txt
+
+	References: No references needed as no images besides my own were used
+
+-->
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="description" content="A portfolio page for Christopher Sigouin.  Shows all software development projects and provides contact information and methods of contact." />
+    <meta name="keywords" content="portfolio, christopher, sigouin, web, project, pei, holland college, software developer" />
+    <meta name="author" content="Christopher Sigouin">
+    <meta name="robots" content="index, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PORTFOLIO OF CHRISTOHPER SIGOUIN</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- CUSTOM CSS FILE -->
+    <link rel="stylesheet" type="text/css" href="css/customCSS.css"/>
+    <!-- BOOTSTRAP VALIDATOR -->
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css"/>
+</head>
+<body>
+
+<div class="container container-grey">
+    <div class="row">
+         <div class="col-sm-12">
+             <span class="headingText-large hidden-xs" style="text-align: right;">christopher SIGOUIN</span>
+             <span class="headingText-med visible-xs">christopher SIGOUIN</span>
+             <span class="headingText-small hidden-xs">Software Developer | IT Professional | People Person</span>
+             <span class="headingText-xs-small visible-xs">Software Developer | IT Professional | People Person</span>
+         </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-7 hidden-xs">
+            <img class="img-responsive pull-left" src="img/menuMe.jpg"/>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+            <br/>
+            <hr>
+            <ul class="nav nav-pills nav-stacked menu-text">
+                <li role="presentation"><a href="javaProjects.html">java PROJECTS</a></li>
+                <li role="presentation"><a href="webProjects.html">web DEVELOPMENT</a></li>
+                <li role="presentation"><a href="blogPage.html">blog PAGE</a></li>
+            </ul>
+            <hr>
+            <div style="text-align: center; padding-bottom: 10px; ">
+                <a href="http://ca.linkedin.com/pub/christopher-sigouin/38/416/9b9/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://twitter.com/krystofurr"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/christopher.sigouin"><i class="fa fa-facebook"></i></a>
+                <a href="http://plus.google.com/112365957715962786541"><i class="fa fa-google-plus"></i></a>
+                <a href="misc/SigouinChristopher_Resume.docx"><i class="fa fa-file-text"></i></a>
+            </div>
+
+            <div id="quoteArea" class="visible-md visible-lg"></div>
+        </div>
+    </div>
+</div> <!-- END: container -->
+
+<div style="padding-bottom: 20px;">
+    <div class="row">
+        <div id="about" class="col-sm-6 panel">
+            <button class="btn btn-info bigSize button-center">ABOUT ME!</button></a>
+        </div>
+        <div id="contact" class="col-sm-6 panel">
+            <button class="bigSize button-center btn btn-primary" data-toggle="modal" data-target="#myModal">CONTACT</button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Me</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="contactForm form-horizontal" role="form">
+                            <div class="form-group">
+                                <label for="inputName" class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="username" class="form-control" id="inputName" placeholder="Name...">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="text" name="email" class="form-control" id="inputEmail3" placeholder="Email...">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="messageBox" class="col-sm-2 control-label">Message</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" name="message" rows="3" placeholder="Your message here..."></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="webBox" value="option1"> Have a Web Project? ( Optional )
+                                </label>
+                                </div>
+                                <div class="col-sm-6">
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" name="javaBox" value="option2"> Have a Java Project? ( Optional )
+                                </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- END OF MODAL -->
+    </div>
+</div> <!-- END: container-fluid -->
+
+
+<div class="footer container">
+    <div class="row">
+        <div class="col-xs-6">
+            Copyright Christopher Sigouin
+        </div>
+        <div class="col-xs-6" id="dateDisplay">
+        </div>
+    </div>
+</div> <!-- END: container -->
+
+
+<!-- JQUERY -->
+<script src="js/jquery-1.11.1.js"></script>
+<!-- BOOTSTRAP -->
+<script src="js/bootstrap.min.js"></script>
+<!-- CUSTOM JS FILE -->
+<script src="js/customJS.js"></script>
+<!-- BOOTSTRAP VALIDATOR -->
+<script src="js/bootstrapValidator.min.js"></script>
+<script>
+    $( document ).ready(function() {
+        // BOOTSTRAP VALIDATOR INITIALIZATION. ONLY USED FOR INDEX PAGE WITH CONTACT FORM
+        $('.contactForm').bootstrapValidator({
+            message: 'This value is not valid',
+            live: 'enabled',
+            trigger: null,
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                username: {
+                    message: 'Your name is not valid!',
+                    validators: {
+                        notEmpty: {
+                            message: 'The username is required and cannot be empty'
+                        },
+                        stringLength: {
+                            min: 2,
+                            max: 30,
+                            message: 'Your name must be more than 1 and less than 30 characters long'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_]+$/,
+                            message: 'The username can only consist of alphabetical, number and underscore'
+                        }
+                    }
+                },
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The email is required and cannot be empty'
+                        },
+                        emailAddress: {
+                            message: 'The input is not a valid email address'
+                        }
+                    }
+                },
+                message: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Message is required and cannot be empty!'
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+<noscript>Please enable Javascript!</noscript>
+</body>
+</html>

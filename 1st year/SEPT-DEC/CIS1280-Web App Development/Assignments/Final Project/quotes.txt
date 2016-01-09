@@ -1,0 +1,12 @@
+If debugging is the process of removing software bugs&#44 then programming must be the process of putting them in&#46
+&#150 Edsger Dijkstra (Dutch computer scientist&#44 winner of the 1972 Turing Award)|
+
+Measuring programming progress by lines of code is like measuring aircraft building progress by weight&#46
+&#150 Bill Gates (co&#150founder of Microsoft)|
+
+Nine people can&#39t make a baby in a month&#46 (regarding the addition of more programmers to get a project completed faster) &#150 Fred Brooks (American computer scientist&#44 winner of the 1999 Turing Award)|
+
+Debugging is twice as hard as writing the code in the first place&#46 Therefore&#44 if you write the code as cleverly as possible&#44 you are&#44 by definition&#44 not smart enough to debug it&#46 &#150 Brian W&#46 Kernighan (Canadian computer scientist&#44 co&#150author of &#34C programming language&#34)|
+
+C makes it easy to shoot yourself in the foot; C++ makes it harder&#44 but when you do&#44 it blows away your whole leg&#46
+&#150 Bjarne Stroustrup (Danish computer scientist&#44 developer of the C++ programming language)
